@@ -266,7 +266,7 @@
 
     .nav-links {
       display: none;
-      gap: 32px;
+      gap: 22px;
     }
 
     .nav-links a {
@@ -376,6 +376,7 @@
     .mobile-menu.open a:nth-child(4) { transition-delay: 0.25s; }
     .mobile-menu.open a:nth-child(5) { transition-delay: 0.3s; }
     .mobile-menu.open a:nth-child(6) { transition-delay: 0.35s; }
+    .mobile-menu.open a:nth-child(7) { transition-delay: 0.4s; }
 
     .mobile-menu a:hover { color: var(--gold); }
 
@@ -745,7 +746,246 @@
     }
 
     /* ========================================
-       9. CTA BANNER
+       9. NEWS
+    ======================================== */
+    .news {
+      padding: 80px 0;
+      background: var(--white);
+    }
+
+    .news-layout {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    .news-content {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 22px;
+    }
+
+    .news-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .news-filter {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      letter-spacing: 0.01em;
+      transition: all var(--transition);
+    }
+
+    .news-filter:hover {
+      border-color: var(--gold);
+      color: var(--gold-dark);
+    }
+
+    .news-filter.active {
+      background: var(--navy);
+      border-color: var(--navy);
+      color: var(--white);
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    .news-card {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      box-shadow: var(--shadow-sm);
+      transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+    }
+
+    .news-card:hover {
+      transform: translateY(-3px);
+      border-color: transparent;
+      box-shadow: var(--shadow-card);
+    }
+
+    .news-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .news-tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: var(--gold-pale);
+      color: var(--gold-dark);
+    }
+
+    .news-date {
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--text-light);
+    }
+
+    .news-card h3 {
+      font-size: 1.02rem;
+      line-height: 1.35;
+      margin: 0;
+    }
+
+    .news-card p {
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
+    .news-impact {
+      padding: 10px 12px;
+      border-left: 3px solid var(--gold);
+      border-radius: var(--radius-sm);
+      background: var(--gold-pale);
+      font-size: 0.84rem;
+      color: var(--navy-light);
+      line-height: 1.5;
+    }
+
+    .news-link {
+      margin-top: auto;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--navy);
+      transition: all var(--transition);
+    }
+
+    .news-link:hover {
+      color: var(--gold-dark);
+      gap: 10px;
+    }
+
+    .news-empty {
+      display: none;
+      margin-top: 18px;
+      padding: 14px;
+      border: 1px dashed var(--border);
+      border-radius: var(--radius-sm);
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      text-align: center;
+      background: var(--white);
+    }
+
+    .news-empty.show {
+      display: block;
+    }
+
+    .news-steps {
+      position: relative;
+      overflow: hidden;
+      padding: 28px 22px;
+      border-radius: var(--radius-lg);
+      background: var(--navy);
+    }
+
+    .news-steps::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(200,146,42,0.2), transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(200,146,42,0.1), transparent 45%);
+      pointer-events: none;
+    }
+
+    .news-steps > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .news-steps h3 {
+      color: var(--white);
+      margin-bottom: 10px;
+      font-size: 1.25rem;
+    }
+
+    .news-steps > p {
+      margin-bottom: 18px;
+      color: rgba(255,255,255,0.72);
+      font-size: 0.9rem;
+      line-height: 1.65;
+    }
+
+    .news-steps-list {
+      display: grid;
+      gap: 10px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    .news-step {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 10px;
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: var(--radius-sm);
+      background: rgba(255,255,255,0.04);
+    }
+
+    .news-step-number {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 700;
+      background: var(--gold);
+      color: var(--white);
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .news-step p {
+      color: rgba(255,255,255,0.82);
+      font-size: 0.84rem;
+      line-height: 1.5;
+    }
+
+    .news-steps .btn {
+      width: 100%;
+      justify-content: center;
+    }
+
+    /* ========================================
+       10. CTA BANNER
     ======================================== */
     .cta-banner {
       padding: 80px 0;
@@ -1094,6 +1334,19 @@
         gap: 20px;
       }
 
+      .news-content {
+        padding: 28px;
+      }
+
+      .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+      }
+
+      .news-steps-list {
+        grid-template-columns: 1fr 1fr;
+      }
+
       .contact-layout {
         flex-direction: row;
         gap: 48px;
@@ -1197,6 +1450,25 @@
         gap: 24px;
       }
 
+      .news-layout {
+        grid-template-columns: minmax(0, 2fr) minmax(300px, 1fr);
+        gap: 28px;
+        align-items: start;
+      }
+
+      .news-content {
+        padding: 30px;
+      }
+
+      .news-steps {
+        position: sticky;
+        top: 102px;
+      }
+
+      .news-steps-list {
+        grid-template-columns: 1fr;
+      }
+
       .contact { padding: 100px 0; }
 
       .contact-info { flex: 0 0 320px; }
@@ -1240,6 +1512,7 @@
         <a href="#inicio">Inicio</a>
         <a href="#nosotros">Sobre Nosotros</a>
         <a href="#migratorios">Servicios Migratorios</a>
+        <a href="#noticias">Noticias Canada</a>
         <a href="#rrhh">Servicios RR.HH.</a>
         <a href="#contacto">Contacto</a>
       </div>
@@ -1257,6 +1530,7 @@
     <a href="#inicio">Inicio</a>
     <a href="#nosotros">Sobre Nosotros</a>
     <a href="#migratorios">Servicios Migratorios</a>
+    <a href="#noticias">Noticias Canada</a>
     <a href="#rrhh">Servicios RR.HH.</a>
     <a href="#contacto">Contacto</a>
     <a href="#contacto" class="btn btn-gold">Solicitar Asesoría</a>
@@ -1477,6 +1751,63 @@
     </div>
   </section>
 
+  <!-- ============ NOTICIAS CANADA ============ -->
+  <section class="news" id="noticias">
+    <div class="container">
+      <div class="services-header">
+        <div class="section-label reveal">Noticias Migracion Canada</div>
+        <h2 class="section-heading reveal reveal-delay-1">Informacion clave para decisiones migratorias inteligentes</h2>
+        <p class="section-desc reveal reveal-delay-2">Consolida actualizaciones de IRCC, Canada.ca y programas provinciales para actuar rapido, con evidencia oficial y enfoque estrategico.</p>
+      </div>
+
+      <div class="news-layout">
+        <div class="news-content reveal reveal-delay-1">
+          <div class="news-toolbar" id="newsFilters" aria-label="Filtros de noticias">
+            <button type="button" class="news-filter active" data-filter="all">Todas</button>
+            <button type="button" class="news-filter" data-filter="express-entry">Express Entry</button>
+            <button type="button" class="news-filter" data-filter="estudio">Permiso de Estudio</button>
+            <button type="button" class="news-filter" data-filter="trabajo">Permiso de Trabajo</button>
+            <button type="button" class="news-filter" data-filter="familia">Patrocinio Familiar</button>
+            <button type="button" class="news-filter" data-filter="pnp">Programas Provinciales</button>
+          </div>
+
+          <div class="news-grid" id="newsGrid" aria-live="polite"></div>
+          <p class="news-empty" id="newsEmpty">No hay noticias para esta categoria. Prueba otro filtro.</p>
+        </div>
+
+        <aside class="news-steps reveal reveal-delay-2">
+          <h3>Solucion en 5 pasos</h3>
+          <p>Transforma noticias migratorias en acciones concretas para tu perfil y evita decisiones improvisadas.</p>
+
+          <ol class="news-steps-list">
+            <li class="news-step">
+              <span class="news-step-number">1</span>
+              <p>Monitorea fuentes oficiales de Canada cada semana.</p>
+            </li>
+            <li class="news-step">
+              <span class="news-step-number">2</span>
+              <p>Clasifica cambios por programa: estudio, trabajo, EE o PNP.</p>
+            </li>
+            <li class="news-step">
+              <span class="news-step-number">3</span>
+              <p>Evalua impacto real en puntaje, tiempos y elegibilidad.</p>
+            </li>
+            <li class="news-step">
+              <span class="news-step-number">4</span>
+              <p>Actualiza checklist documental segun el cambio detectado.</p>
+            </li>
+            <li class="news-step">
+              <span class="news-step-number">5</span>
+              <p>Define plan con asesoria para ejecutar antes del siguiente corte.</p>
+            </li>
+          </ol>
+
+          <a href="#contacto" class="btn btn-gold">Quiero estrategia migratoria</a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
   <!-- ============ CTA BANNER ============ -->
   <section class="cta-banner">
     <div class="container">
@@ -1634,6 +1965,7 @@
           <h5>Empresa</h5>
           <ul class="footer-links">
             <li><a href="#nosotros">Sobre Nosotros</a></li>
+            <li><a href="#noticias">Noticias Canada</a></li>
             <li><a href="#contacto">Contacto</a></li>
             <li><a href="#">Aviso de Privacidad</a></li>
             <li><a href="#">Términos y Condiciones</a></li>
@@ -1781,6 +2113,121 @@
         }
       });
     });
+
+    // ---- News Section ----
+    const migrationNews = [
+      {
+        title: 'Express Entry: como leer los cortes por categoria en 2026',
+        summary: 'Analiza invitaciones por categoria para ajustar CRS, idioma y experiencia antes del siguiente draw.',
+        impact: 'Accion sugerida: validar CRS y actualizar perfil en las proximas 2 semanas.',
+        date: '2026-02-18',
+        category: 'express-entry',
+        categoryLabel: 'Express Entry',
+        sourceName: 'IRCC - Express Entry',
+        sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry.html'
+      },
+      {
+        title: 'Permiso de estudio: puntos criticos para carta de aceptacion y fondos',
+        summary: 'Refuerza documentacion financiera y consistencia academica para reducir rechazos en solicitudes iniciales.',
+        impact: 'Accion sugerida: actualizar pruebas de fondos y plan de estudios antes de aplicar.',
+        date: '2026-02-11',
+        category: 'estudio',
+        categoryLabel: 'Permiso de Estudio',
+        sourceName: 'Canada.ca - Study permit',
+        sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit.html'
+      },
+      {
+        title: 'Permiso de trabajo: ajuste estrategico para LMIA y ofertas validas',
+        summary: 'Revisa empleador, ocupacion y condiciones contractuales para evitar devoluciones por inconsistencias.',
+        impact: 'Accion sugerida: auditar oferta laboral y evidencia de elegibilidad del empleador.',
+        date: '2026-02-06',
+        category: 'trabajo',
+        categoryLabel: 'Permiso de Trabajo',
+        sourceName: 'IRCC - Work permits',
+        sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/permit.html'
+      },
+      {
+        title: 'Patrocinio familiar: lista corta para evitar retrasos de revision',
+        summary: 'Prioriza pruebas de relacion genuina, historial migratorio y documentos civiles completos.',
+        impact: 'Accion sugerida: preparar expediente unificado con evidencia cronologica.',
+        date: '2026-01-29',
+        category: 'familia',
+        categoryLabel: 'Patrocinio Familiar',
+        sourceName: 'Canada.ca - Sponsor family',
+        sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/family-sponsorship.html'
+      },
+      {
+        title: 'PNP provincial: como comparar cupos y ventanas de aplicacion',
+        summary: 'Cada provincia abre y cierra flujos en tiempos distintos; prepara perfil por prioridad territorial.',
+        impact: 'Accion sugerida: seleccionar 2 provincias objetivo y adaptar CV/NOC por cada una.',
+        date: '2026-01-24',
+        category: 'pnp',
+        categoryLabel: 'Programa Provincial',
+        sourceName: 'IRCC - Provincial nominees',
+        sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees.html'
+      },
+      {
+        title: 'Express Entry: optimizacion de perfil para profesionales con experiencia',
+        summary: 'Define estrategia de idioma, educacion y experiencia canadiense para mejorar posicion competitiva.',
+        impact: 'Accion sugerida: recalcular puntos CRS con escenarios de mejora de idioma.',
+        date: '2026-01-15',
+        category: 'express-entry',
+        categoryLabel: 'Express Entry',
+        sourceName: 'IRCC - Rounds of invitations',
+        sourceUrl: 'https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/rounds-invitations.html'
+      }
+    ];
+
+    const newsGrid = document.getElementById('newsGrid');
+    const newsEmpty = document.getElementById('newsEmpty');
+    const newsFilterButtons = document.querySelectorAll('.news-filter');
+
+    if (newsGrid && newsFilterButtons.length > 0) {
+      const orderedNews = [...migrationNews].sort((a, b) => new Date(b.date) - new Date(a.date));
+
+      function formatNewsDate(dateString) {
+        return new Intl.DateTimeFormat('es-MX', {
+          day: '2-digit',
+          month: 'short',
+          year: 'numeric'
+        }).format(new Date(dateString));
+      }
+
+      function renderNews(filterKey = 'all') {
+        const visibleNews = filterKey === 'all'
+          ? orderedNews
+          : orderedNews.filter(item => item.category === filterKey);
+
+        newsGrid.innerHTML = visibleNews.map(item => `
+          <article class="news-card">
+            <div class="news-meta">
+              <span class="news-tag">${item.categoryLabel}</span>
+              <span class="news-date">${formatNewsDate(item.date)}</span>
+            </div>
+            <h3>${item.title}</h3>
+            <p>${item.summary}</p>
+            <div class="news-impact">${item.impact}</div>
+            <a class="news-link" href="${item.sourceUrl}" target="_blank" rel="noopener noreferrer">
+              ${item.sourceName}
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+            </a>
+          </article>
+        `).join('');
+
+        newsEmpty.classList.toggle('show', visibleNews.length === 0);
+      }
+
+      renderNews();
+
+      newsFilterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const selectedFilter = button.dataset.filter || 'all';
+          newsFilterButtons.forEach(btn => btn.classList.remove('active'));
+          button.classList.add('active');
+          renderNews(selectedFilter);
+        });
+      });
+    }
 
     // ---- Contact Form ----
     const contactForm = document.getElementById('contactForm');
