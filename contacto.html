@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Integral Consulting</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Canada Style -->
+    <link rel="stylesheet" href="assets/css/canada-style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo3.jpeg" alt="Integral Consulting Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="vacantes.html">Vacantes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="guia.html">Guía Migratoria</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="contacto.html" class="btn btn-turquoise shadow-sm">Evaluar mi Perfil</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5">
+                    <h1 class="display-5 fw-bold mb-4">Hablemos de tu <span class="text-turquoise">futuro</span></h1>
+                    <p class="text-muted mb-5">Completa el formulario y uno de nuestros expertos se pondrá en contacto contigo en menos de 24 horas hábiles.</p>
+                    
+                    <div class="mb-4">
+                        <div class="d-flex gap-3 mb-3">
+                            <div class="text-turquoise"><i class="fa-solid fa-envelope fs-4"></i></div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Correo Electrónico</h6>
+                                <p class="text-muted small">info@integralconsulting.ca</p>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3 mb-3">
+                            <div class="text-turquoise"><i class="fa-solid fa-phone fs-4"></i></div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Teléfono (Canadá)</h6>
+                                <p class="text-muted small">+1 (416) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3 mb-3">
+                            <div class="text-turquoise"><i class="fa-solid fa-location-dot fs-4"></i></div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Oficina Central</h6>
+                                <p class="text-muted small">123 Yonge St, Toronto, ON M5B 1N8, Canadá</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-4 bg-light rounded-4">
+                        <h6 class="fw-bold mb-3">Horario de atención (EST)</h6>
+                        <ul class="list-unstyled small text-muted mb-0">
+                            <li>Lun - Vie: 9:00 AM - 6:00 PM</li>
+                            <li>Sáb: 10:00 AM - 2:00 PM</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="card border-0 shadow-lg p-4 p-md-5 rounded-4">
+                        <form action="#" method="POST">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label small fw-bold">Nombre</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label small fw-bold">Apellido</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label small fw-bold">Correo Electrónico</label>
+                                    <input type="email" class="form-control" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label small fw-bold">Nivel de Inglés</label>
+                                    <select class="form-select">
+                                        <option selected disabled>Selecciona...</option>
+                                        <option>Básico (CLB 1-3)</option>
+                                        <option>Intermedio (CLB 4-6)</option>
+                                        <option>Avanzado (CLB 7+)</option>
+                                        <option>Nativo</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label small fw-bold">Interés Principal</label>
+                                    <select class="form-select">
+                                        <option selected disabled>Selecciona...</option>
+                                        <option>Trabajo</option>
+                                        <option>Estudio</option>
+                                        <option>Negocios</option>
+                                        <option>Residencia Permanente</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label small fw-bold">Mensaje</label>
+                                    <textarea class="form-control" rows="4" placeholder="Cuéntanos un poco sobre tu perfil..."></textarea>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <button type="submit" class="btn btn-turquoise btn-lg w-100 py-3">Enviar Mensaje</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <div class="footer-logo">
+                        <img src="assets/img/logo1.jpeg" alt="Integral Consulting Footer Logo">
+                    </div>
+                    <p class="mb-4">Consultoría integral especializada en el mercado canadiense. Tu éxito es nuestra misión.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                    <h5>Navegación</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html">Inicio</a></li>
+                        <li class="mb-2"><a href="vacantes.html">Vacantes</a></li>
+                        <li class="mb-2"><a href="guia.html">Guía Migratoria</a></li>
+                        <li class="mb-2"><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <h5>Sedes</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fa-solid fa-location-dot text-turquoise me-2"></i> Toronto, Canada</li>
+                        <li class="mb-2"><i class="fa-solid fa-location-dot text-turquoise me-2"></i> Ciudad de México, MX</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <div class="legal-seal">
+                        <i class="fa-solid fa-check-double text-turquoise mb-2 fs-2"></i>
+                        <h6 class="text-white">Agencia Autorizada</h6>
+                        <p class="small mb-0">Cumplimos con la normativa IRCC para trámites migratorios.</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-5 border-secondary">
+            <div class="text-center mt-4">
+                <p class="small mb-0">&copy; 2026 Integral Consulting. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
