@@ -1,15 +1,19 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros | Integral Consulting</title>
+    <title>Sobre Nosotros | Asesoría Migratoria Legal para Canadá | Integral Consulting</title>
+    <meta name="description" content="Conoce a nuestro equipo de consultores certificados. Más de 15 años de experiencia en procesos migratorios legales y reclutamiento internacional.">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/logo4.jpeg" type="image/x-icon">
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Custom Style -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Master Canada Style -->
+    <link rel="stylesheet" href="assets/css/canada-style.css">
 </head>
 <body>
 
@@ -17,19 +21,24 @@
     <nav class="navbar navbar-expand-lg fixed-top scrolled" id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="assets/img/logo3.jpeg" alt="Integral Consulting">
+                <img src="assets/img/logo3.jpeg" alt="Integral Consulting" style="height: 40px;">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link active" href="nosotros.html">Nosotros</a></li>
                     <li class="nav-item"><a class="nav-link" href="vacantes.html">Vacantes</a></li>
                     <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-                    <li class="nav-item ms-lg-3">
+                    <li class="nav-item ms-lg-3 d-flex align-items-center gap-2">
+                        <div class="d-flex me-2">
+                            <a href="#" class="lang-selector active">ES</a>
+                            <span class="text-muted small mx-1">|</span>
+                            <a href="#" class="lang-selector">EN</a>
+                        </div>
                         <a href="contacto.html" class="btn btn-turquoise">Cita Gratuita</a>
                     </li>
                 </ul>
@@ -45,8 +54,53 @@
         </div>
     </section>
 
+    <!-- ¿Por qué Canadá Pillars Section -->
+    <section class="py-5 bg-white">
+        <div class="container py-5">
+            <h2 class="display-5 fw-bold text-center mb-5">¿Por qué <span class="text-turquoise">Canadá</span>?</h2>
+            <div class="row g-4">
+                <!-- Pillar 1: Salud -->
+                <div class="col-md-4">
+                    <div class="card product-card h-100">
+                        <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1505751172107-573967a4dd29?auto=format&fit=crop&q=80&w=800');">
+                            <span class="product-badge">Bienestar</span>
+                        </div>
+                        <div class="product-body">
+                            <h4 class="fw-bold mb-3">Salud Universal</h4>
+                            <p class="text-muted small mb-0">Acceso a uno de los sistemas de salud pública más eficientes y humanos del mundo, financiado por el gobierno para todos sus residentes.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pillar 2: Seguridad -->
+                <div class="col-md-4">
+                    <div class="card product-card h-100">
+                        <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1566243052021-936930f369ca?auto=format&fit=crop&q=80&w=800');">
+                            <span class="product-badge">Protección</span>
+                        </div>
+                        <div class="product-body">
+                            <h4 class="fw-bold mb-3">Seguridad Ciudadana</h4>
+                            <p class="text-muted small mb-0">Canadá figura consistentemente entre los 10 países más seguros del mundo, ofreciendo un entorno pacífico para el desarrollo familiar.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pillar 3: Economía -->
+                <div class="col-md-4">
+                    <div class="card product-card h-100">
+                        <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1518458028785-8fbcd101ebb9?auto=format&fit=crop&q=80&w=800');">
+                            <span class="product-badge">Crecimiento</span>
+                        </div>
+                        <div class="product-body">
+                            <h4 class="fw-bold mb-3">Estabilidad Económica</h4>
+                            <p class="text-muted small mb-0">Un mercado laboral sólido, una moneda estable y constantes oportunidades de emprendimiento en todos los sectores industriales.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Detailed Content -->
-    <section class="py-5">
+    <section class="py-5 bg-light">
         <div class="container py-5">
             <div class="row g-5 align-items-center mb-5">
                 <div class="col-lg-6">
@@ -62,83 +116,15 @@
             <!-- Mission & Vision Cards -->
             <div class="row g-4 mb-5">
                 <div class="col-md-6">
-                    <div class="p-5 bg-light h-100 border-start border-turquoise border-5">
+                    <div class="p-5 bg-white h-100 border-start border-turquoise border-5 shadow-sm">
                         <h3 class="fw-bold mb-3">Nuestra Misión</h3>
                         <p class="text-muted">Facilitar la movilidad laboral y migratoria de talento global hacia Canadá, garantizando procesos éticos, legales y exitosos que beneficien tanto a las personas como a la economía canadiense.</p>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="p-5 bg-dark text-white h-100 border-start border-turquoise border-5">
+                    <div class="p-5 bg-dark text-white h-100 border-start border-turquoise border-5 shadow-sm">
                         <h3 class="fw-bold mb-3">Nuestra Visión</h3>
                         <p class="opacity-75">Ser la consultora líder y más confiable para profesionales de habla hispana que buscan transformar su futuro en Canadá, reconocida por nuestra tasa de éxito y soporte integral.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Values -->
-            <div class="py-5 text-center">
-                <h2 class="display-5 fw-bold mb-5">Valores que Nos Definen</h2>
-                <div class="row g-4">
-                    <div class="col-md-3">
-                        <i class="fa-solid fa-scale-balanced text-turquoise fs-1 mb-3"></i>
-                        <h5 class="fw-bold">Ética Legal</h5>
-                        <p class="small text-muted">Operamos estrictamente bajo la ley migratoria canadiense y estándares del CICC.</p>
-                    </div>
-                    <div class="col-md-3">
-                        <i class="fa-solid fa-handshake-angle text-turquoise fs-1 mb-3"></i>
-                        <h5 class="fw-bold">Empatía</h5>
-                        <p class="small text-muted">Tratamos cada caso como si fuera propio, entendiendo el valor de tu proyecto.</p>
-                    </div>
-                    <div class="col-md-3">
-                        <i class="fa-solid fa-bullseye text-turquoise fs-1 mb-3"></i>
-                        <h5 class="fw-bold">Resultados</h5>
-                        <p class="small text-muted">Nos enfocamos en soluciones reales que terminen en una vida exitosa en Canadá.</p>
-                    </div>
-                    <div class="col-md-3">
-                        <i class="fa-solid fa-users-gear text-turquoise fs-1 mb-3"></i>
-                        <h5 class="fw-bold">Integralidad</h5>
-                        <p class="small text-muted">Desde el primer examen de idiomas hasta tu integración en el nuevo empleo.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team / Accreditations -->
-    <section class="py-5 bg-light">
-        <div class="container py-5">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-5">
-                    <h2 class="display-5 fw-bold mb-4">Consultores Certificados</h2>
-                    <p class="text-muted mb-4">No arriesgues tu futuro. Solo los consultores autorizados por el College of Immigration and Citizenship Consultants (CICC) pueden cobrar por asesoría migratoria.</p>
-                    <div class="d-flex align-items-center gap-3 p-3 bg-white rounded shadow-sm">
-                        <i class="fa-solid fa-id-card text-turquoise fs-2"></i>
-                        <div>
-                            <h6 class="fw-bold mb-0">Miembro Activo CICC</h6>
-                            <small class="text-muted">Verifica nuestro estatus oficial</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-7">
-                    <div class="row g-4">
-                        <div class="col-md-6">
-                            <div class="card border-0 shadow-sm">
-                                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400" class="card-img-top" alt="Founder">
-                                <div class="card-body">
-                                    <h5 class="fw-bold mb-0">John Doe</h5>
-                                    <small class="text-turquoise">Socio Fundador & Consultor CICC</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card border-0 shadow-sm">
-                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400" class="card-img-top" alt="HR Lead">
-                                <div class="card-body">
-                                    <h5 class="fw-bold mb-0">Jane Smith</h5>
-                                    <small class="text-turquoise">Directora de Reclutamiento Internacional</small>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -150,10 +136,15 @@
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-4">
-                    <div class="footer-logo">
-                        <img src="assets/img/logo1.jpeg" alt="Integral Consulting">
+                    <div class="footer-logo d-flex align-items-center gap-3">
+                        <img src="assets/img/logo1.jpeg" alt="Integral Consulting" style="height: 60px;">
                     </div>
-                    <p>Consultoría líder en servicios migratorios y recursos humanos, conectando talento global con el mercado canadiense.</p>
+                    <p class="mt-3">Consultoría líder en servicios migratorios y recursos humanos. Miembros activos del College of Immigration and Citizenship Consultants (CICC).</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="text-white fs-4"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
                 </div>
                 <div class="col-md-4 col-lg-2">
                     <h5>Enlaces</h5>
@@ -167,20 +158,20 @@
                 <div class="col-md-4 col-lg-3">
                     <h5>Sedes</h5>
                     <ul class="list-unstyled">
-                        <li>Toronto, Canada</li>
-                        <li>Ciudad de México, MX</li>
+                        <li><i class="fa-solid fa-location-dot text-turquoise me-2"></i> Toronto, Canada</li>
+                        <li><i class="fa-solid fa-location-dot text-turquoise me-2"></i> Ciudad de México, MX</li>
                     </ul>
                 </div>
                 <div class="col-md-4 col-lg-3">
                     <h5>Contacto</h5>
                     <ul class="list-unstyled">
-                        <li>+52 (55) 1234 5678</li>
-                        <li>info@integralconsulting.ca</li>
+                        <li><i class="fa-solid fa-phone text-turquoise me-2"></i> +52 (55) 1234 5678</li>
+                        <li><i class="fa-solid fa-envelope text-turquoise me-2"></i> info@integralconsulting.ca</li>
                     </ul>
                 </div>
             </div>
             <div class="text-center pt-5 pb-3">
-                <p class="small">&copy; 2026 Integral Consulting. Todos los derechos reservados.</p>
+                <p class="small">&copy; 2026 Integral Consulting. Todos los derechos reservados. Consultores autorizados ante el CICC.</p>
             </div>
         </div>
     </footer>
