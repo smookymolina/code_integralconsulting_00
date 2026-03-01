@@ -3,33 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Integral Consulting | Tu Puente a Canadá</title>
-    <!-- Bootstrap 5 -->
+    <title>Integral Consulting | Especialistas en Canadá</title>
+    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Canada Style -->
-    <link rel="stylesheet" href="assets/css/canada-style.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg sticky-top">
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="assets/img/logo3.jpeg" alt="Integral Consulting Logo">
+                <img src="assets/img/logo3.jpeg" alt="Integral Consulting" id="navLogo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-center">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
                     <li class="nav-item"><a class="nav-link" href="vacantes.html">Vacantes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="guia.html">Guía Migratoria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                     <li class="nav-item ms-lg-3">
-                        <a href="contacto.html" class="btn btn-turquoise shadow-sm">Evaluar mi Perfil</a>
+                        <a href="contacto.html" class="btn btn-turquoise">Cita Gratuita</a>
                     </li>
                 </ul>
             </div>
@@ -37,119 +38,131 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero-canada">
+    <header class="hero">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8">
-                    <h1 class="display-3 fw-bold mb-4">Tu futuro profesional comienza en <span class="text-turquoise">Canadá</span></h1>
-                    <p class="lead mb-5 text-white-50">Expertos en migración y reclutamiento internacional. Te acompañamos en cada paso para que vivas y trabajes en el país más acogedor del mundo.</p>
-                    <div class="d-flex gap-3 flex-wrap">
-                        <a href="#rutas" class="btn btn-turquoise btn-lg">Explorar Rutas</a>
-                        <a href="vacantes.html" class="btn btn-outline-light btn-lg">Ver Vacantes</a>
+                <div class="col-lg-7">
+                    <h1 class="display-2 fw-bold mb-4">Descubre tu futuro en <span class="text-turquoise">Canadá</span></h1>
+                    <p class="fs-4 mb-5 opacity-75">Servicios migratorios premium y gestión de talento internacional con más de 15 años de experiencia real en el mercado canadiense.</p>
+                    <div class="d-flex gap-3">
+                        <a href="vacantes.html" class="btn btn-turquoise btn-lg">Explorar Empleos</a>
+                        <a href="contacto.html" class="btn btn-outline-light btn-lg">Evaluación Gratuita</a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Why Canada Section -->
-    <section class="section-padding">
+    <!-- Trust Center -->
+    <section class="trust-center">
         <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="section-title">¿Por qué elegir Canadá?</h2>
-                <p class="text-muted col-lg-6 mx-auto">Canadá no es solo un destino, es una oportunidad de vida inigualable para ti y tu familia.</p>
-            </div>
-            <div class="row g-4">
+            <div class="row text-center g-4">
                 <div class="col-md-4">
-                    <div class="benefit-card">
-                        <div class="benefit-icon"><i class="fa-solid fa-heart-pulse"></i></div>
-                        <h4>Salud Universal</h4>
-                        <p class="text-muted">Acceso a uno de los mejores sistemas de salud pública del mundo, garantizando bienestar para todos sus residentes.</p>
+                    <div class="trust-item justify-content-center">
+                        <i class="fa-solid fa-gavel"></i>
+                        <span class="fw-bold text-uppercase">Asesoría Legal Certificada</span>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="benefit-card">
-                        <div class="benefit-icon"><i class="fa-solid fa-shield-halved"></i></div>
-                        <h4>Seguridad Total</h4>
-                        <p class="text-muted">Uno de los países más seguros y pacíficos del planeta, ideal para el crecimiento de tus hijos y tranquilidad personal.</p>
+                    <div class="trust-item justify-content-center border-start border-white border-opacity-25">
+                        <i class="fa-solid fa-trophy"></i>
+                        <span class="fw-bold text-uppercase">15+ Años de Éxito</span>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="benefit-card">
-                        <div class="benefit-icon"><i class="fa-solid fa-chart-line"></i></div>
-                        <h4>Economía Sólida</h4>
-                        <p class="text-muted">Mercado laboral en constante crecimiento y una moneda fuerte que protege el fruto de tu trabajo.</p>
+                    <div class="trust-item justify-content-center border-start border-white border-opacity-25">
+                        <i class="fa-solid fa-headset"></i>
+                        <span class="fw-bold text-uppercase">Soporte 24/7 Personalizado</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Migration Routes Section -->
-    <section id="rutas" class="section-padding bg-light">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="section-title">Rutas Migratorias</h2>
-                <p class="text-muted">Selecciona el camino que mejor se adapte a tus metas profesionales.</p>
-            </div>
+    <!-- Our Process -->
+    <section class="py-5 bg-white mt-5">
+        <div class="container py-5 text-center">
+            <h2 class="display-5 fw-bold mb-5">Nuestro Proceso en <span class="text-turquoise">3 Pasos</span></h2>
             <div class="row g-4">
-                <div class="col-lg-4">
-                    <div class="route-card">
-                        <img src="assets/img/Fondo.jpeg" alt="Trabajo en Canadá">
-                        <div class="route-overlay">
-                            <h3>Trabajo</h3>
-                            <p>Permisos de trabajo cerrados, abiertos y movilidad internacional.</p>
-                            <a href="contacto.html" class="btn btn-light btn-sm w-fit mt-2">Más información</a>
-                        </div>
+                <div class="col-md-4">
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <h4 class="fw-bold">Evaluación Inicial</h4>
+                        <p class="text-muted">Analizamos tu perfil profesional, académico y nivel de idiomas para determinar la mejor ruta migratoria.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="route-card">
-                        <img src="assets/img/Fondo2.jpeg" alt="Estudio en Canadá">
-                        <div class="route-overlay">
-                            <h3>Estudio</h3>
-                            <p>Programas de post-grado y diplomas con opción a PGWP.</p>
-                            <a href="contacto.html" class="btn btn-light btn-sm w-fit mt-2">Más información</a>
-                        </div>
+                <div class="col-md-4">
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <h4 class="fw-bold">Estrategia y Vacantes</h4>
+                        <p class="text-muted">Te conectamos con empleadores canadienses y preparamos toda la documentación legal necesaria.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="route-card">
-                        <img src="assets/img/Fondo canada.jpg" alt="Negocios en Canadá">
-                        <div class="route-overlay">
-                            <h3>Negocios</h3>
-                            <p>Inversiones, Start-up Visa y transferencia de ejecutivos.</p>
-                            <a href="contacto.html" class="btn btn-light btn-sm w-fit mt-2">Más información</a>
-                        </div>
+                <div class="col-md-4">
+                    <div class="step-item">
+                        <div class="step-number">3</div>
+                        <h4 class="fw-bold">Viaje y Soporte</h4>
+                        <p class="text-muted">Te acompañamos en tu llegada a Canadá y te brindamos soporte continuo en tu integración laboral.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Legal Warranty Section -->
-    <section class="section-padding">
-        <div class="container">
-            <div class="bg-turquoise text-white p-5 rounded-5 shadow-lg position-relative overflow-hidden">
-                <div class="row align-items-center">
-                    <div class="col-lg-7">
-                        <h2 class="display-5 fw-bold mb-4">Compromiso de Legalidad</h2>
-                        <p class="lead mb-4">Operamos bajo estrictos estándares internacionales. Todos nuestros procesos son supervisados por consultores certificados ante el Colegio de Consultores de Inmigración y Ciudadanía (CICC).</p>
-                        <div class="d-flex gap-4">
-                            <div class="d-flex align-items-center gap-2">
-                                <i class="fa-solid fa-certificate fs-3"></i>
-                                <span class="fw-bold">Certificado CICC</span>
-                            </div>
-                            <div class="d-flex align-items-center gap-2">
-                                <i class="fa-solid fa-gavel fs-3"></i>
-                                <span class="fw-bold">100% Legal</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 text-center d-none d-lg-block">
-                        <i class="fa-solid fa-shield-check display-1 opacity-25"></i>
+    <!-- Featured Stats -->
+    <section class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1490644659564-e4d9302149d8?auto=format&fit=crop&q=80&w=800" class="img-fluid rounded shadow" alt="Vancouver Skyline">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold mb-4">Líderes en el Mercado Canadiense</h2>
+                    <p class="text-muted lead mb-4">No solo somos consultores, somos tus socios estratégicos en Toronto, Vancouver, Montreal y Calgary.</p>
+                    <ul class="list-unstyled mb-5">
+                        <li class="mb-3"><i class="fa-solid fa-check text-turquoise me-2"></i> Especialistas en Reclutamiento de Oficios y TI</li>
+                        <li class="mb-3"><i class="fa-solid fa-check text-turquoise me-2"></i> Gestión garantizada de LMIA y Permisos de Trabajo</li>
+                        <li class="mb-3"><i class="fa-solid fa-check text-turquoise me-2"></i> Soporte en reubicación familiar y búsqueda de vivienda</li>
+                    </ul>
+                    <a href="nosotros.html" class="btn btn-turquoise">Conoce nuestra historia</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-5 bg-white">
+        <div class="container py-5">
+            <h2 class="display-5 fw-bold text-center mb-5">Casos de Éxito</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="testimonial-card">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p class="lead mb-4">"Gracias a Integral Consulting, hoy trabajo como carpintero en Toronto con un sueldo que nunca imaginé. El proceso fue claro y siempre estuvieron ahí para resolver mis dudas."</p>
+                        <h5 class="fw-bold mb-0">Carlos M.</h5>
+                        <small class="text-turquoise">Carpintero • Reubicado desde México</small>
                     </div>
                 </div>
+                <div class="col-md-6">
+                    <div class="testimonial-card">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p class="lead mb-4">"El equipo me ayudó a conseguir una oferta de trabajo en Vancouver como desarrolladora. Me guiaron en cada paso de la visa y hoy mi familia tiene la residencia permanente."</p>
+                        <h5 class="fw-bold mb-0">Ana L.</h5>
+                        <small class="text-turquoise">Software Engineer • Reubicada desde Colombia</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners -->
+    <section class="py-5 border-top">
+        <div class="container py-4">
+            <div class="d-flex flex-wrap justify-content-center align-items-center gap-5">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg" class="partner-logo" alt="Government of Canada" style="width: 80px;">
+                <img src="https://images.unsplash.com/photo-1599305090748-36656ca01099?auto=format&fit=crop&q=80&w=200" class="partner-logo" alt="Partner 1">
+                <img src="https://images.unsplash.com/photo-1599305090748-36656ca01099?auto=format&fit=crop&q=80&w=200" class="partner-logo" alt="Partner 2">
+                <img src="https://images.unsplash.com/photo-1599305090748-36656ca01099?auto=format&fit=crop&q=80&w=200" class="partner-logo" alt="Partner 3">
             </div>
         </div>
     </section>
@@ -160,47 +173,56 @@
             <div class="row g-5">
                 <div class="col-lg-4">
                     <div class="footer-logo">
-                        <img src="assets/img/logo1.jpeg" alt="Integral Consulting Footer Logo">
+                        <img src="assets/img/logo1.jpeg" alt="Integral Consulting">
                     </div>
-                    <p class="mb-4">Consultoría integral especializada en el mercado canadiense. Tu éxito es nuestra misión.</p>
-                    <div class="d-flex gap-3">
-                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="fa-brands fa-instagram"></i></a>
+                    <p>Consultoría líder en servicios migratorios y recursos humanos, conectando talento global con el mercado canadiense con ética y profesionalismo.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="text-white fs-4"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-2">
-                    <h5>Navegación</h5>
+                    <h5>Enlaces</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="index.html">Inicio</a></li>
-                        <li class="mb-2"><a href="vacantes.html">Vacantes</a></li>
-                        <li class="mb-2"><a href="guia.html">Guía Migratoria</a></li>
-                        <li class="mb-2"><a href="contacto.html">Contacto</a></li>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="vacantes.html">Vacantes</a></li>
+                        <li><a href="blog.html">Blog</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 col-lg-3">
                     <h5>Sedes</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><i class="fa-solid fa-location-dot text-turquoise me-2"></i> Toronto, Canada</li>
-                        <li class="mb-2"><i class="fa-solid fa-location-dot text-turquoise me-2"></i> Ciudad de México, MX</li>
+                        <li><i class="fa-solid fa-location-dot text-turquoise me-2"></i> Toronto, Canada</li>
+                        <li><i class="fa-solid fa-location-dot text-turquoise me-2"></i> Ciudad de México, MX</li>
                     </ul>
                 </div>
                 <div class="col-md-4 col-lg-3">
-                    <div class="legal-seal">
-                        <i class="fa-solid fa-check-double text-turquoise mb-2 fs-2"></i>
-                        <h6 class="text-white">Agencia Autorizada</h6>
-                        <p class="small mb-0">Cumplimos con la normativa IRCC para trámites migratorios.</p>
-                    </div>
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fa-solid fa-phone text-turquoise me-2"></i> +52 (55) 1234 5678</li>
+                        <li><i class="fa-solid fa-envelope text-turquoise me-2"></i> info@integralconsulting.ca</li>
+                    </ul>
                 </div>
             </div>
-            <hr class="mt-5 border-secondary">
-            <div class="text-center mt-4">
-                <p class="small mb-0">&copy; 2026 Integral Consulting. Todos los derechos reservados.</p>
+            <div class="text-center pt-5 pb-3">
+                <p class="small">&copy; 2026 Integral Consulting. Todos los derechos reservados. Consultores autorizados ante el CICC.</p>
             </div>
         </div>
     </footer>
 
     <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('mainNav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 </html>

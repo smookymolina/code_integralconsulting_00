@@ -5,135 +5,183 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vacantes | Integral Consulting</title>
-    <!-- Bootstrap 5 -->
+    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Canada Style -->
-    <link rel="stylesheet" href="assets/css/canada-style.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg sticky-top">
+    <nav class="navbar navbar-expand-lg fixed-top scrolled" id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="assets/img/logo3.jpeg" alt="Integral Consulting Logo">
+                <img src="assets/img/logo3.jpeg" alt="Integral Consulting">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-center">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
                     <li class="nav-item"><a class="nav-link active" href="vacantes.html">Vacantes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="guia.html">Guía Migratoria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                     <li class="nav-item ms-lg-3">
-                        <a href="contacto.html" class="btn btn-turquoise shadow-sm">Evaluar mi Perfil</a>
+                        <a href="contacto.html" class="btn btn-turquoise">Cita Gratuita</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Header -->
-    <section class="py-5 bg-light mt-4">
+    <!-- Page Header -->
+    <section class="py-5 mt-5 bg-light">
         <div class="container py-5">
-            <div class="row align-items-center">
-                <div class="col-lg-7">
-                    <h1 class="display-4 fw-bold">Portal de Vacantes</h1>
-                    <p class="lead text-muted">Conectamos el talento internacional con las mejores empresas en Canadá. Tu próxima oportunidad laboral te espera.</p>
+            <h1 class="display-4 fw-bold">Oportunidades Laborales</h1>
+            <p class="lead text-muted">Tu carrera profesional en Canadá comienza aquí. Filtra por sector y encuentra tu próximo desafío.</p>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-5 bg-white">
+        <div class="container py-5">
+            <h2 class="display-6 fw-bold mb-5">Beneficios de Trabajar en Canadá</h2>
+            <div class="row g-4 text-center">
+                <div class="col-md-3">
+                    <div class="p-4 rounded bg-light">
+                        <i class="fa-solid fa-dollar-sign text-turquoise fs-2 mb-3"></i>
+                        <h6 class="fw-bold">Salarios Competitivos</h6>
+                        <p class="small text-muted mb-0">Uno de los salarios mínimos y promedios más altos del mundo.</p>
+                    </div>
                 </div>
-                <div class="col-lg-5 text-lg-end">
-                    <div class="bg-white p-3 rounded-3 shadow-sm d-inline-block">
-                        <span class="fw-bold text-turquoise fs-4">+120</span>
-                        <span class="text-muted ms-2">Posiciones Abiertas</span>
+                <div class="col-md-3">
+                    <div class="p-4 rounded bg-light">
+                        <i class="fa-solid fa-shield-heart text-turquoise fs-2 mb-3"></i>
+                        <h6 class="fw-bold">Seguridad Social</h6>
+                        <p class="small text-muted mb-0">Acceso a salud gratuita y beneficios por desempleo o paternidad.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-4 rounded bg-light">
+                        <i class="fa-solid fa-users text-turquoise fs-2 mb-3"></i>
+                        <h6 class="fw-bold">Ambiente Multicultural</h6>
+                        <p class="small text-muted mb-0">Empresas que valoran la diversidad y el talento global.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-4 rounded bg-light">
+                        <i class="fa-solid fa-passport text-turquoise fs-2 mb-3"></i>
+                        <h6 class="fw-bold">Ruta a Residencia</h6>
+                        <p class="small text-muted mb-0">La experiencia laboral canadiense es clave para la residencia permanente.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Opportunities Section -->
-    <section class="section-padding">
-        <div class="container">
-            <h2 class="section-title">Oportunidades Destacadas</h2>
-            
-            <!-- Filter Bar (Simulated) -->
-            <div class="d-flex gap-2 mb-4 overflow-auto pb-2">
-                <button class="btn btn-turquoise btn-sm">Todas</button>
-                <button class="btn btn-outline-secondary btn-sm">Construcción</button>
-                <button class="btn btn-outline-secondary btn-sm">Tecnología</button>
-                <button class="btn btn-outline-secondary btn-sm">Salud</button>
-                <button class="btn btn-outline-secondary btn-sm">Hostelería</button>
-            </div>
-
-            <div class="row g-3">
-                <!-- Job Card 1 -->
-                <div class="col-12">
-                    <div class="vacancy-card d-md-flex align-items-center gap-4">
-                        <div class="vacancy-company-logo mb-3 mb-md-0">CN</div>
-                        <div class="flex-grow-1">
-                            <h4 class="mb-1">Carpintero de Armazón (Framing)</h4>
-                            <p class="mb-1 fw-bold text-turquoise">Ontario Construction Group</p>
-                            <p class="mb-0 text-muted small"><i class="fa-solid fa-location-dot me-1"></i> Toronto, ON • Full-time • $28 - $35 CAD/hr</p>
+    <!-- Vacancies Grid -->
+    <section class="py-5 bg-light">
+        <div class="container py-5">
+            <h2 class="display-6 fw-bold mb-5">Vacantes Recientes</h2>
+            <div class="row g-4">
+                <!-- Product Card 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card product-card h-100">
+                        <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1541888946425-d81bb19480c5?auto=format&fit=crop&q=80&w=800');">
+                            <span class="product-badge">Construcción</span>
                         </div>
-                        <div class="mt-3 mt-md-0">
-                            <a href="contacto.html" class="btn btn-outline-turquoise btn-sm px-4">Postular</a>
+                        <div class="product-body">
+                            <h4 class="fw-bold mb-3">Carpintero de Armazón</h4>
+                            <div class="product-info">
+                                <div><i class="fa-solid fa-location-dot"></i> Toronto, ON</div>
+                                <div><i class="fa-solid fa-money-bill-wave"></i> $28 - $35 CAD/hr</div>
+                                <div><i class="fa-solid fa-graduation-cap"></i> 2+ años experiencia</div>
+                            </div>
+                            <p class="small text-muted mb-4">Se busca carpintero con experiencia en estructuras residenciales. Apoyo en proceso migratorio incluido.</p>
+                            <a href="contacto.html" class="btn btn-turquoise w-100">Postular ahora</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Job Card 2 -->
-                <div class="col-12">
-                    <div class="vacancy-card d-md-flex align-items-center gap-4">
-                        <div class="vacancy-company-logo mb-3 mb-md-0">TS</div>
-                        <div class="flex-grow-1">
-                            <h4 class="mb-1">Full Stack Developer (React/Node)</h4>
-                            <p class="mb-1 fw-bold text-turquoise">Tech Solutions Canada</p>
-                            <p class="mb-0 text-muted small"><i class="fa-solid fa-location-dot me-1"></i> Vancouver, BC (Remoto opcional) • $85k - $110k CAD/año</p>
+                <!-- Product Card 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card product-card h-100">
+                        <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1573161158332-554e1d2e5ca5?auto=format&fit=crop&q=80&w=800');">
+                            <span class="product-badge">Tecnología</span>
                         </div>
-                        <div class="mt-3 mt-md-0">
-                            <a href="contacto.html" class="btn btn-outline-turquoise btn-sm px-4">Postular</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Job Card 3 -->
-                <div class="col-12">
-                    <div class="vacancy-card d-md-flex align-items-center gap-4">
-                        <div class="vacancy-company-logo mb-3 mb-md-0">GH</div>
-                        <div class="flex-grow-1">
-                            <h4 class="mb-1">Enfermero/a Registrado/a</h4>
-                            <p class="mb-1 fw-bold text-turquoise">Global Health Services</p>
-                            <p class="mb-0 text-muted small"><i class="fa-solid fa-location-dot me-1"></i> Montreal, QC • Tiempo Completo • Beneficios Extendidos</p>
-                        </div>
-                        <div class="mt-3 mt-md-0">
-                            <a href="contacto.html" class="btn btn-outline-turquoise btn-sm px-4">Postular</a>
+                        <div class="product-body">
+                            <h4 class="fw-bold mb-3">Senior Software Dev</h4>
+                            <div class="product-info">
+                                <div><i class="fa-solid fa-location-dot"></i> Vancouver, BC</div>
+                                <div><i class="fa-solid fa-money-bill-wave"></i> $90k - $120k CAD/año</div>
+                                <div><i class="fa-solid fa-graduation-cap"></i> Inglés Avanzado</div>
+                            </div>
+                            <p class="small text-muted mb-4">Únete a una de las tech-stars en crecimiento en Vancouver. Stack: React, Node.js, AWS.</p>
+                            <a href="contacto.html" class="btn btn-turquoise w-100">Postular ahora</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Job Card 4 -->
-                <div class="col-12">
-                    <div class="vacancy-card d-md-flex align-items-center gap-4">
-                        <div class="vacancy-company-logo mb-3 mb-md-0">LC</div>
-                        <div class="flex-grow-1">
-                            <h4 class="mb-1">Operador de Maquinaria Pesada</h4>
-                            <p class="mb-1 fw-bold text-turquoise">Logistics Canada Inc.</p>
-                            <p class="mb-0 text-muted small"><i class="fa-solid fa-location-dot me-1"></i> Calgary, AB • Contrato 2 años • Relocación incluída</p>
+                <!-- Product Card 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card product-card h-100">
+                        <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=800');">
+                            <span class="product-badge">Salud</span>
                         </div>
-                        <div class="mt-3 mt-md-0">
-                            <a href="contacto.html" class="btn btn-outline-turquoise btn-sm px-4">Postular</a>
+                        <div class="product-body">
+                            <h4 class="fw-bold mb-3">Enfermero/a Registrado/a</h4>
+                            <div class="product-info">
+                                <div><i class="fa-solid fa-location-dot"></i> Montreal, QC</div>
+                                <div><i class="fa-solid fa-money-bill-wave"></i> $35 - $45 CAD/hr</div>
+                                <div><i class="fa-solid fa-graduation-cap"></i> Título revalidado</div>
+                            </div>
+                            <p class="small text-muted mb-4">Posiciones disponibles en hospitales públicos y privados. Requiere francés funcional o disposición para aprender.</p>
+                            <a href="contacto.html" class="btn btn-turquoise w-100">Postular ahora</a>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="text-center mt-5">
-                <p class="text-muted mb-4">¿No encuentras lo que buscas? Registra tu perfil para futuras vacantes.</p>
-                <a href="contacto.html" class="btn btn-turquoise px-5">Subir mi CV</a>
+                <!-- Product Card 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card product-card h-100">
+                        <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1512418490979-92798ccc13b0?auto=format&fit=crop&q=80&w=800');">
+                            <span class="product-badge">Hostelería</span>
+                        </div>
+                        <div class="product-body">
+                            <h4 class="fw-bold mb-3">Chef de Partie</h4>
+                            <div class="product-info">
+                                <div><i class="fa-solid fa-location-dot"></i> Banff, AB</div>
+                                <div><i class="fa-solid fa-money-bill-wave"></i> $22 - $26 CAD/hr</div>
+                                <div><i class="fa-solid fa-graduation-cap"></i> Diploma Culinario</div>
+                            </div>
+                            <p class="small text-muted mb-4">Trabaja en uno de los resorts más exclusivos de las Rocosas Canadienses. Alojamiento incluido.</p>
+                            <a href="contacto.html" class="btn btn-turquoise w-100">Postular ahora</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card product-card h-100">
+                        <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1541625602330-2277a4c4bb99?auto=format&fit=crop&q=80&w=800');">
+                            <span class="product-badge">Transporte</span>
+                        </div>
+                        <div class="product-body">
+                            <h4 class="fw-bold mb-3">Conductor de Carga Pesada</h4>
+                            <div class="product-info">
+                                <div><i class="fa-solid fa-location-dot"></i> Calgary, AB</div>
+                                <div><i class="fa-solid fa-money-bill-wave"></i> $0.50 - $0.65 CAD/milla</div>
+                                <div><i class="fa-solid fa-graduation-cap"></i> Licencia Clase 1</div>
+                            </div>
+                            <p class="small text-muted mb-4">Importante empresa de logística busca conductores para rutas interprovinciales. Bonos por desempeño.</p>
+                            <a href="contacto.html" class="btn btn-turquoise w-100">Postular ahora</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -144,42 +192,36 @@
             <div class="row g-5">
                 <div class="col-lg-4">
                     <div class="footer-logo">
-                        <img src="assets/img/logo1.jpeg" alt="Integral Consulting Footer Logo">
+                        <img src="assets/img/logo1.jpeg" alt="Integral Consulting">
                     </div>
-                    <p class="mb-4">Consultoría integral especializada en el mercado canadiense. Tu éxito es nuestra misión.</p>
-                    <div class="d-flex gap-3">
-                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="fa-brands fa-instagram"></i></a>
-                    </div>
+                    <p>Consultoría líder en servicios migratorios y recursos humanos, conectando talento global con el mercado canadiense.</p>
                 </div>
                 <div class="col-md-4 col-lg-2">
-                    <h5>Navegación</h5>
+                    <h5>Enlaces</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="index.html">Inicio</a></li>
-                        <li class="mb-2"><a href="vacantes.html">Vacantes</a></li>
-                        <li class="mb-2"><a href="guia.html">Guía Migratoria</a></li>
-                        <li class="mb-2"><a href="contacto.html">Contacto</a></li>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="vacantes.html">Vacantes</a></li>
+                        <li><a href="blog.html">Blog</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 col-lg-3">
                     <h5>Sedes</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><i class="fa-solid fa-location-dot text-turquoise me-2"></i> Toronto, Canada</li>
-                        <li class="mb-2"><i class="fa-solid fa-location-dot text-turquoise me-2"></i> Ciudad de México, MX</li>
+                        <li>Toronto, Canada</li>
+                        <li>Ciudad de México, MX</li>
                     </ul>
                 </div>
                 <div class="col-md-4 col-lg-3">
-                    <div class="legal-seal">
-                        <i class="fa-solid fa-check-double text-turquoise mb-2 fs-2"></i>
-                        <h6 class="text-white">Agencia Autorizada</h6>
-                        <p class="small mb-0">Cumplimos con la normativa IRCC para trámites migratorios.</p>
-                    </div>
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li>+52 (55) 1234 5678</li>
+                        <li>info@integralconsulting.ca</li>
+                    </ul>
                 </div>
             </div>
-            <hr class="mt-5 border-secondary">
-            <div class="text-center mt-4">
-                <p class="small mb-0">&copy; 2026 Integral Consulting. Todos los derechos reservados.</p>
+            <div class="text-center pt-5 pb-3">
+                <p class="small">&copy; 2026 Integral Consulting. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
