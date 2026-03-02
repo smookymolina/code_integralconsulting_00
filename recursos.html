@@ -29,6 +29,7 @@
                 <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="provincias.html">Provincias</a></li>
                     <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
                     <li class="nav-item"><a class="nav-link" href="vacantes.html">Vacantes</a></li>
                     <li class="nav-item"><a class="nav-link active" href="recursos.html">Recursos</a></li>
@@ -46,6 +47,16 @@
             </div>
         </div>
     </nav>
+
+    <!-- News Alert Bar -->
+    <div class="alert alert-dismissible fade show news-alert-bar text-center mb-0" role="alert">
+        <div class="container">
+            <i class="fa-solid fa-bullhorn text-turquoise me-2"></i>
+            Última hora: <strong>Cambios en las cuotas de Express Entry para 2026.</strong> 
+            <a href="blog.html" class="ms-2">Leer más <i class="fa-solid fa-arrow-right small"></i></a>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </div>
 
     <!-- Page Header -->
     <header class="py-5 mt-5 bg-dark text-white">
@@ -204,6 +215,189 @@
         </div>
     </section>
 
+    <!-- Settlement Checklist Section -->
+    <section class="py-5 bg-light border-top">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mb-3">Lista de Verificación de <span class="text-turquoise">Recién Llegados</span></h2>
+                <p class="text-muted lead mx-auto" style="max-width: 700px;">Organiza tu llegada a Canadá con nuestra checklist interactiva. Marca tus tareas completadas y asegúrate de no olvidar nada importante.</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card border-0 shadow-sm overflow-hidden">
+                        <div class="card-header bg-white p-0">
+                            <ul class="nav nav-tabs nav-fill settlement-tabs border-0" id="checklistTabs" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active py-3 fw-bold" id="pre-arrival-tab" data-bs-toggle="tab" data-bs-target="#pre-arrival" type="button" role="tab">
+                                        <i class="fa-solid fa-plane-departure me-2"></i>Antes de viajar
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link py-3 fw-bold" id="first-week-tab" data-bs-toggle="tab" data-bs-target="#first-week" type="button" role="tab">
+                                        <i class="fa-solid fa-calendar-week me-2"></i>Primera semana
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link py-3 fw-bold" id="first-month-tab" data-bs-toggle="tab" data-bs-target="#first-month" type="button" role="tab">
+                                        <i class="fa-solid fa-calendar-check me-2"></i>Primer mes
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-body p-4 p-md-5 bg-white">
+                            <div class="tab-content" id="checklistTabsContent">
+                                <!-- Pre-arrival -->
+                                <div class="tab-pane fade show active" id="pre-arrival" role="tabpanel">
+                                    <div class="row g-4">
+                                        <div class="col-md-6">
+                                            <div class="form-check custom-checklist-item mb-3">
+                                                <input class="form-check-input" type="checkbox" id="check1">
+                                                <label class="form-check-label ms-2" for="check1">
+                                                    <i class="fa-solid fa-passport text-turquoise me-2"></i>Validar vigencia de pasaportes
+                                                </label>
+                                            </div>
+                                            <div class="form-check custom-checklist-item mb-3">
+                                                <input class="form-check-input" type="checkbox" id="check2">
+                                                <label class="form-check-label ms-2" for="check2">
+                                                    <i class="fa-solid fa-file-invoice-dollar text-turquoise me-2"></i>Prueba de fondos (Estado de cuenta)
+                                                </label>
+                                            </div>
+                                            <div class="form-check custom-checklist-item mb-3">
+                                                <input class="form-check-input" type="checkbox" id="check3">
+                                                <label class="form-check-label ms-2" for="check3">
+                                                    <i class="fa-solid fa-briefcase-medical text-turquoise me-2"></i>Contratar seguro de viaje inicial
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-check custom-checklist-item mb-3">
+                                                <input class="form-check-input" type="checkbox" id="check4">
+                                                <label class="form-check-label ms-2" for="check4">
+                                                    <i class="fa-solid fa-house-user text-turquoise me-2"></i>Reservar alojamiento temporal
+                                                </label>
+                                            </div>
+                                            <div class="form-check custom-checklist-item mb-3">
+                                                <input class="form-check-input" type="checkbox" id="check5">
+                                                <label class="form-check-label ms-2" for="check5">
+                                                    <i class="fa-solid fa-folder-open text-turquoise me-2"></i>Traducir documentos clave
+                                                </label>
+                                            </div>
+                                            <div class="form-check custom-checklist-item mb-3">
+                                                <input class="form-check-input" type="checkbox" id="check6">
+                                                <label class="form-check-label ms-2" for="check6">
+                                                    <i class="fa-solid fa-car text-turquoise me-2"></i>Obtener licencia internacional de conducir
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- First Week -->
+                                <div class="tab-pane fade" id="first-week" role="tabpanel">
+                                    <div class="row g-4">
+                                        <div class="col-md-6">
+                                            <div class="form-check custom-checklist-item mb-3">
+                                                <input class="form-check-input" type="checkbox" id="check7">
+                                                <label class="form-check-label ms-2" for="check7">
+                                                    <i class="fa-solid fa-id-card text-turquoise me-2"></i>Tramitar el SIN (Service Canada)
+                                                </label>
+                                            </div>
+                                            <div class="form-check custom-checklist-item mb-3">
+                                                <input class="form-check-input" type="checkbox" id="check8">
+                                                <label class="form-check-label ms-2" for="check8">
+                                                    <i class="fa-solid fa-building-columns text-turquoise me-2"></i>Abrir cuenta bancaria
+                                                </label>
+                                            </div>
+                                            <div class="form-check custom-checklist-item mb-3">
+                                                <input class="form-check-input" type="checkbox" id="check9">
+                                                <label class="form-check-label ms-2" for="check9">
+                                                    <i class="fa-solid fa-mobile-screen-button text-turquoise me-2"></i>Contratar plan celular local
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-check custom-checklist-item mb-3">
+                                                <input class="form-check-input" type="checkbox" id="check10">
+                                                <label class="form-check-label ms-2" for="check10">
+                                                    <i class="fa-solid fa-bus text-turquoise me-2"></i>Obtener tarjeta de transporte público
+                                                </label>
+                                            </div>
+                                            <div class="form-check custom-checklist-item mb-3">
+                                                <input class="form-check-input" type="checkbox" id="check11">
+                                                <label class="form-check-label ms-2" for="check11">
+                                                    <i class="fa-solid fa-map text-turquoise me-2"></i>Explorar el vecindario y supermercados
+                                                </label>
+                                            </div>
+                                            <div class="form-check custom-checklist-item mb-3">
+                                                <input class="form-check-input" type="checkbox" id="check12">
+                                                <label class="form-check-label ms-2" for="check12">
+                                                    <i class="fa-solid fa-handshake text-turquoise me-2"></i>Contactar agencias de asentamiento
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- First Month -->
+                                <div class="tab-pane fade" id="first-month" role="tabpanel">
+                                    <div class="row g-4">
+                                        <div class="col-md-6">
+                                            <div class="form-check custom-checklist-item mb-3">
+                                                <input class="form-check-input" type="checkbox" id="check13">
+                                                <label class="form-check-label ms-2" for="check13">
+                                                    <i class="fa-solid fa-hospital-user text-turquoise me-2"></i>Registro en salud provincial
+                                                </label>
+                                            </div>
+                                            <div class="form-check custom-checklist-item mb-3">
+                                                <input class="form-check-input" type="checkbox" id="check14">
+                                                <label class="form-check-label ms-2" for="check14">
+                                                    <i class="fa-solid fa-address-card text-turquoise me-2"></i>Tramitar licencia de conducir provincial
+                                                </label>
+                                            </div>
+                                            <div class="form-check custom-checklist-item mb-3">
+                                                <input class="form-check-input" type="checkbox" id="check15">
+                                                <label class="form-check-label ms-2" for="check15">
+                                                    <i class="fa-solid fa-graduation-cap text-turquoise me-2"></i>Registro escolar para niños
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-check custom-checklist-item mb-3">
+                                                <input class="form-check-input" type="checkbox" id="check16">
+                                                <label class="form-check-label ms-2" for="check16">
+                                                    <i class="fa-solid fa-house-chimney text-turquoise me-2"></i>Buscar alojamiento permanente
+                                                </label>
+                                            </div>
+                                            <div class="form-check custom-checklist-item mb-3">
+                                                <input class="form-check-input" type="checkbox" id="check17">
+                                                <label class="form-check-label ms-2" for="check17">
+                                                    <i class="fa-solid fa-envelope-open-text text-turquoise me-2"></i>Actualizar dirección ante el IRCC
+                                                </label>
+                                            </div>
+                                            <div class="form-check custom-checklist-item mb-3">
+                                                <input class="form-check-input" type="checkbox" id="check18">
+                                                <label class="form-check-label ms-2" for="check18">
+                                                    <i class="fa-solid fa-network-wired text-turquoise me-2"></i>Networking y búsqueda laboral activa
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-5 text-center">
+                                <hr class="mb-4">
+                                <button class="btn btn-turquoise btn-lg px-5 shadow-sm">
+                                    <i class="fa-solid fa-file-pdf me-2"></i>Descargar Checklist Completa (PDF)
+                                </button>
+                                <p class="text-muted small mt-3">Lleva tu guía contigo y marca tu progreso sin conexión.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Modal de Resultados CRS -->
     <div class="modal fade" id="resultModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -244,6 +438,7 @@
                     <ul class="list-unstyled">
                         <li><a href="index.html">Inicio</a></li>
                         <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="provincias.html">Provincias</a></li>
                         <li><a href="servicios.html">Servicios</a></li>
                         <li><a href="vacantes.html">Vacantes</a></li>
                         <li><a href="recursos.html">Recursos</a></li>

@@ -11,7 +11,7 @@
     <!-- Custom Style -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class="home-page">
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
@@ -26,6 +26,7 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="provincias.html">Provincias</a></li>
                     <li class="nav-item"><a class="nav-link" href="vacantes.html">Vacantes</a></li>
                     <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
@@ -36,6 +37,16 @@
             </div>
         </div>
     </nav>
+
+    <!-- News Alert Bar -->
+    <div class="alert alert-dismissible fade show news-alert-bar text-center mb-0" role="alert">
+        <div class="container">
+            <i class="fa-solid fa-bullhorn text-turquoise me-2"></i>
+            Última hora: <strong>Cambios en las cuotas de Express Entry para 2026.</strong> 
+            <a href="blog.html" class="ms-2">Leer más <i class="fa-solid fa-arrow-right small"></i></a>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </div>
 
     <!-- Hero Section -->
     <header class="hero">
@@ -197,6 +208,67 @@
         </div>
     </section>
 
+    <!-- Eligibility Quiz Section -->
+    <section class="py-5 bg-light" id="eligibility-quiz">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="quiz-container bg-white p-4 p-md-5 rounded-4 shadow-sm text-center">
+                        <div id="quiz-intro">
+                            <h2 class="display-5 fw-bold mb-3">¿Eres elegible para <span class="text-turquoise">Canadá</span>?</h2>
+                            <p class="text-muted lead mb-5">Responde 3 preguntas rápidas y descubre tu mejor ruta migratoria en menos de un minuto.</p>
+                            <button class="btn btn-turquoise btn-lg px-5 py-3 rounded-pill fw-bold" onclick="startQuiz()">Comenzar Evaluación</button>
+                        </div>
+
+                        <!-- Question 1 -->
+                        <div id="question-1" class="quiz-step d-none">
+                            <span class="badge bg-turquoise mb-3">Pregunta 1 de 3</span>
+                            <h3 class="fw-bold mb-4">¿Cuál es tu nivel de inglés?</h3>
+                            <div class="d-grid gap-3">
+                                <button class="btn btn-outline-turquoise btn-lg py-3 rounded-3" onclick="nextQuestion(1, 'alto')">Alto (IELTS 7+ / Fluido)</button>
+                                <button class="btn btn-outline-turquoise btn-lg py-3 rounded-3" onclick="nextQuestion(1, 'medio')">Medio (IELTS 5-6 / Conversacional)</button>
+                                <button class="btn btn-outline-turquoise btn-lg py-3 rounded-3" onclick="nextQuestion(1, 'bajo')">Bajo / Principiante</button>
+                            </div>
+                        </div>
+
+                        <!-- Question 2 -->
+                        <div id="question-2" class="quiz-step d-none">
+                            <span class="badge bg-turquoise mb-3">Pregunta 2 de 3</span>
+                            <h3 class="fw-bold mb-4">¿Tienes un título profesional o técnico?</h3>
+                            <div class="d-grid gap-3">
+                                <button class="btn btn-outline-turquoise btn-lg py-3 rounded-3" onclick="nextQuestion(2, 'si')">Sí, tengo título universitario o técnico</button>
+                                <button class="btn btn-outline-turquoise btn-lg py-3 rounded-3" onclick="nextQuestion(2, 'no')">No, pero tengo experiencia laboral</button>
+                            </div>
+                        </div>
+
+                        <!-- Question 3 -->
+                        <div id="question-3" class="quiz-step d-none">
+                            <span class="badge bg-turquoise mb-3">Pregunta 3 de 3</span>
+                            <h3 class="fw-bold mb-4">¿Tienes una oferta de trabajo en Canadá?</h3>
+                            <div class="d-grid gap-3">
+                                <button class="btn btn-outline-turquoise btn-lg py-3 rounded-3" onclick="showResult('si')">Sí, ya tengo una oferta validada</button>
+                                <button class="btn btn-outline-turquoise btn-lg py-3 rounded-3" onclick="showResult('no')">No, estoy buscando una oportunidad</button>
+                            </div>
+                        </div>
+
+                        <!-- Result -->
+                        <div id="quiz-result" class="quiz-step d-none">
+                            <div class="result-icon mb-4">
+                                <i class="fa-solid fa-circle-check text-success display-1"></i>
+                            </div>
+                            <h3 class="fw-bold mb-3" id="result-title">Análisis de Perfil</h3>
+                            <p class="lead text-muted mb-5" id="result-text"></p>
+                            <div class="d-flex flex-column flex-md-row gap-3 justify-content-center">
+                                <a href="contacto.html" class="btn btn-turquoise btn-lg px-4 py-3 rounded-pill fw-bold">Agendar Evaluación Detallada</a>
+                                <button class="btn btn-outline-secondary btn-lg px-4 py-3 rounded-pill fw-bold" onclick="resetQuiz()">Reiniciar Test</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Testimonials -->
     <section class="py-5 bg-white">
         <div class="container py-5">
@@ -254,6 +326,7 @@
                     <ul class="list-unstyled">
                         <li><a href="index.html">Inicio</a></li>
                         <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="provincias.html">Provincias</a></li>
                         <li><a href="vacantes.html">Vacantes</a></li>
                         <li><a href="blog.html">Blog</a></li>
                     </ul>

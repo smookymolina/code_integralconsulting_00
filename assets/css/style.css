@@ -25,8 +25,9 @@ body {
     background: transparent;
 }
 
+/* 4. FONDO: Asegúrate de que .navbar.scrolled tenga background: var(--white) !important; */
 .navbar.scrolled {
-    background: var(--white);
+    background: var(--white) !important;
     padding: 12px 0;
     box-shadow: 0 2px 15px rgba(0,0,0,0.1);
 }
@@ -36,22 +37,31 @@ body {
     transition: var(--transition);
 }
 
+/* --- NAVBAR OPTIMIZADA (SEGURIDAD DE RENDERIZADO) --- */
+
+/* 1. SEGURIDAD INICIAL: Establece el color de .nav-link en var(--oxford-grey) (#333333) con !important */
 .nav-link {
-    color: var(--white) !important;
+    color: var(--oxford-grey) !important;
     font-weight: 600;
     text-transform: uppercase;
     font-size: 0.85rem;
     letter-spacing: 1px;
     margin: 0 15px;
+    transition: var(--transition);
 }
 
-.navbar.scrolled .nav-link {
-    color: var(--oxford-grey) !important;
+/* 2. EXCEPCIÓN DEL HERO: Solo en index.html (home-page) cuando la barra esté arriba */
+.home-page .navbar:not(.scrolled) .nav-link {
+    color: var(--white) !important;
 }
 
-.nav-link:hover, .nav-link.active {
+/* 3. ESTADOS DE MARCA: Hover y Active siempre var(--turquoise) (#00AEC7) con !important */
+.nav-link:hover, 
+.nav-link.active {
     color: var(--turquoise) !important;
 }
+
+/* --- FIN NAVBAR --- */
 
 /* Hero Section */
 .hero {
@@ -203,6 +213,188 @@ body {
 .btn-turquoise:hover {
     background: var(--oxford-grey);
     color: white;
+}
+
+.btn-outline-turquoise {
+    border: 2px solid var(--turquoise);
+    color: var(--turquoise);
+    background: transparent;
+    border-radius: 0;
+    padding: 10px 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: var(--transition);
+}
+
+.btn-outline-turquoise:hover {
+    background: var(--turquoise);
+    color: white;
+}
+
+/* Province Cards */
+.province-card {
+    position: relative;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.province-card:hover {
+    transform: translateY(-10px);
+}
+
+.fun-fact-overlay {
+    opacity: 0;
+    transition: var(--transition);
+    pointer-events: none;
+    z-index: 2;
+    visibility: hidden;
+}
+
+.province-card:hover .fun-fact-overlay {
+    opacity: 0.95;
+    pointer-events: auto;
+    visibility: visible;
+}
+
+/* Settlement Checklist */
+.settlement-tabs .nav-link {
+    color: var(--oxford-grey);
+    border: none;
+    border-bottom: 3px solid transparent;
+    border-radius: 0;
+    transition: var(--transition);
+}
+
+.settlement-tabs .nav-link.active {
+    color: var(--turquoise) !important;
+    background-color: transparent !important;
+    border-bottom-color: var(--turquoise);
+}
+
+.settlement-tabs .nav-link:hover:not(.active) {
+    border-bottom-color: rgba(0, 174, 199, 0.3);
+}
+
+.custom-checklist-item {
+    padding: 15px;
+    border-radius: 8px;
+    background-color: var(--light-grey);
+    transition: var(--transition);
+    border: 1px solid transparent;
+}
+
+.custom-checklist-item:hover {
+    background-color: var(--white);
+    border-color: var(--turquoise);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.custom-checklist-item .form-check-input:checked + .form-check-label {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.custom-checklist-item .form-check-input:focus {
+    box-shadow: 0 0 0 0.25rem rgba(0, 174, 199, 0.25);
+    border-color: var(--turquoise);
+}
+
+.custom-checklist-item .form-check-input:checked {
+    background-color: var(--turquoise);
+    border-color: var(--turquoise);
+}
+
+/* Eligibility Quiz */
+.quiz-container {
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.quiz-step {
+    animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#eligibility-quiz .btn-outline-turquoise {
+    border-width: 2px;
+    font-weight: 600;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+#eligibility-quiz .badge {
+    font-size: 0.8rem;
+    padding: 8px 15px;
+    border-radius: 50px;
+}
+
+/* CV Resume Paper Style */
+.resume-paper {
+    background: var(--white);
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-radius: 0;
+    border: 1px solid #eee;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.resume-paper h5 {
+    border-bottom: 2px solid var(--turquoise);
+    padding-bottom: 5px;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: var(--oxford-grey);
+}
+
+.resume-paper .resume-section-content {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+.resume-paper .resume-header {
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+/* News Alert Bar */
+.news-alert-bar {
+    margin-top: 80px; /* Offset for fixed navbar */
+    border-radius: 0;
+    border: none;
+    background-color: rgba(0, 174, 199, 0.1);
+    color: var(--oxford-grey);
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 10px 0;
+    z-index: 1020;
+    position: relative;
+}
+
+.news-alert-bar .btn-close {
+    font-size: 0.7rem;
+    padding: 1.25rem;
+}
+
+.news-alert-bar a {
+    color: var(--turquoise);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.news-alert-bar a:hover {
+    text-decoration: underline;
 }
 
 /* Footer */

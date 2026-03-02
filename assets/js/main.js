@@ -120,6 +120,70 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // 4. Hover effect for province cards
+    const provinceCards = document.querySelectorAll('.province-card');
+    provinceCards.forEach(card => {
+        const overlay = card.querySelector('.fun-fact-overlay');
+        const factText = card.querySelector('.fact-text');
+        const fact = card.getAttribute('data-fun-fact');
+        
+        if(overlay && factText && fact) {
+            factText.innerText = fact;
+            overlay.classList.remove('d-none');
+        }
+    });
+
+    // 5. Eligibility Quiz Logic
+    let quizData = {
+        english: '',
+        degree: '',
+        jobOffer: ''
+    };
+
+    window.startQuiz = function() {
+        document.getElementById('quiz-intro').classList.add('d-none');
+        document.getElementById('question-1').classList.remove('d-none');
+    };
+
+    window.nextQuestion = function(currentStep, value) {
+        if (currentStep === 1) {
+            quizData.english = value;
+            document.getElementById('question-1').classList.add('d-none');
+            document.getElementById('question-2').classList.remove('d-none');
+        } else if (currentStep === 2) {
+            quizData.degree = value;
+            document.getElementById('question-2').classList.add('d-none');
+            document.getElementById('question-3').classList.remove('d-none');
+        }
+    };
+
+    window.showResult = function(jobOfferValue) {
+        quizData.jobOffer = jobOfferValue;
+        document.getElementById('question-3').classList.add('d-none');
+        document.getElementById('quiz-result').classList.remove('d-none');
+
+        const title = document.getElementById('result-title');
+        const text = document.getElementById('result-text');
+
+        if (quizData.jobOffer === 'si') {
+            title.innerText = "¡Perfil de Alta Prioridad!";
+            text.innerText = "Tienes una oferta de trabajo validada. Esto facilita enormemente tu proceso migratorio a través de un Permiso de Trabajo o LMIA.";
+        } else if (quizData.english === 'alto' && quizData.degree === 'si') {
+            title.innerText = "Tienes un perfil fuerte para Express Entry";
+            text.innerText = "Tu combinación de alto nivel de inglés y formación profesional te otorga un puntaje CRS competitivo para la residencia permanente.";
+        } else {
+            title.innerText = "Te recomendamos la ruta de estudios";
+            text.innerText = "Un programa de estudios en Canadá te permitirá obtener experiencia local y un permiso de trabajo post-graduación (PGWP), fortaleciendo tu perfil.";
+        }
+    };
+
+    window.resetQuiz = function() {
+        quizData = { english: '', degree: '', jobOffer: '' };
+        const steps = document.querySelectorAll('.quiz-step');
+        steps.forEach(step => step.classList.add('d-none'));
+        document.getElementById('quiz-intro').classList.remove('d-none');
+    };
+
     // Navbar Scroll
     window.addEventListener('scroll', function() {
         const nav = document.getElementById('mainNav');
