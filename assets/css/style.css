@@ -18,49 +18,41 @@ body {
     overflow-x: hidden;
 }
 
-/* Navbar - Sticky Transparent to White */
+/* --- NAVBAR DEFINITIVA: SIEMPRE VISIBLE --- */
 .navbar {
-    padding: 20px 0;
+    padding: 15px 0;
     transition: var(--transition);
-    background: transparent;
+    background: var(--white) !important; /* Fondo blanco obligatorio */
+    top: 0;
+    z-index: 2000; /* Asegurar que esté por encima de todo */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-/* 4. FONDO: Asegúrate de que .navbar.scrolled tenga background: var(--white) !important; */
 .navbar.scrolled {
-    background: var(--white) !important;
-    padding: 12px 0;
-    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    padding: 10px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 }
 
-.navbar-brand img {
-    height: 50px;
-    transition: var(--transition);
-}
-
-/* --- NAVBAR OPTIMIZADA (SEGURIDAD DE RENDERIZADO) --- */
-
-/* 1. SEGURIDAD INICIAL: Establece el color de .nav-link en var(--oxford-grey) (#333333) con !important */
+/* Color de links: Siempre Oxford Grey (#333333) */
 .nav-link {
-    color: var(--oxford-grey) !important;
-    font-weight: 600;
+    color: #333333 !important;
+    font-weight: 700 !important; /* Más grosor para visibilidad */
     text-transform: uppercase;
     font-size: 0.85rem;
-    letter-spacing: 1px;
-    margin: 0 15px;
+    letter-spacing: 0.5px;
+    margin: 0 12px;
     transition: var(--transition);
 }
 
-/* 2. EXCEPCIÓN DEL HERO: Solo en index.html (home-page) cuando la barra esté arriba */
-.home-page .navbar:not(.scrolled) .nav-link {
-    color: var(--white) !important;
-}
-
-/* 3. ESTADOS DE MARCA: Hover y Active siempre var(--turquoise) (#00AEC7) con !important */
 .nav-link:hover, 
 .nav-link.active {
     color: var(--turquoise) !important;
 }
 
+.navbar-brand img {
+    height: 45px;
+    transition: var(--transition);
+}
 /* --- FIN NAVBAR --- */
 
 /* Hero Section */
@@ -370,7 +362,6 @@ body {
 
 /* News Alert Bar */
 .news-alert-bar {
-    margin-top: 80px; /* Offset for fixed navbar */
     border-radius: 0;
     border: none;
     background-color: rgba(0, 174, 199, 0.1);
