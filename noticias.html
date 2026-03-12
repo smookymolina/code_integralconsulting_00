@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios | Integral Consulting</title>
+    <title>Noticias | Integral Consulting</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script type="module" src="/index.js"></script>
 </head>
-<body class="servicios-page">
+<body class="blog-page">
     <div id="preloader"><div class="loader-content"><img src="assets/img/logo3.jpeg" alt="Integral Consulting" class="loader-logo-small"></div></div>
 
     <!-- News Alert Bar -->
@@ -48,10 +48,10 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
                     <li class="nav-item"><a class="nav-link" href="vacantes.html">Vacantes</a></li>
                     <li class="nav-item"><a class="nav-link" href="casos-exito.html">Casos de Éxito</a></li>
-                    <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="noticias.html">Noticias</a></li>
                     <li class="nav-item"><a class="nav-link" href="preguntas.html">Preguntas Frecuentes</a></li>
                     <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                 </ul>
@@ -62,86 +62,70 @@
     <!-- Page Header -->
     <header class="py-5 mt-5 bg-light" data-aos="fade-down">
         <div class="container py-5 text-center">
-            <h1 class="display-4 fw-bold">Nuestros <span class="text-turquoise">Servicios</span></h1>
-            <p class="lead text-muted">Soluciones migratorias integrales diseñadas por consultores certificados.</p>
+            <h1 class="display-4 fw-bold"><span class="text-turquoise">NOTICIAS</span></h1>
+            <p class="lead text-muted">Mantente al día con las últimas noticias y guías sobre Canadá.</p>
         </div>
     </header>
 
+    <!-- Blog Feed -->
     <section class="py-5 overflow-hidden">
-        <div class="container py-4">
+        <div class="container py-5">
+            <!-- Newsletter Box (Moved to top) -->
+            <div class="mb-5 p-5 bg-dark text-white rounded-5 shadow-lg text-center overflow-hidden border-top border-turquoise border-4" data-aos="zoom-in">
+                <h2 class="fw-bold mb-3">Suscríbete a nuestro <span class="text-turquoise">Boletín</span></h2>
+                <p class="opacity-75 mb-4 lead">Recibe información estratégica directamente en tu correo.</p>
+                <form class="row g-2 justify-content-center">
+                    <div class="col-md-5">
+                        <input type="email" class="form-control rounded-pill px-4 py-3 border-0 shadow-sm" placeholder="tu@correo.com">
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-turquoise rounded-pill px-5 py-3 fw-bold shadow-sm">Suscribirme</button>
+                    </div>
+                </form>
+            </div>
+
             <div class="row g-4">
-                <!-- Bloque 1: Express Entry & PNP -->
-                <div class="col-lg-6" data-aos="fade-up">
-                    <div class="card product-card h-100 border-0 shadow-lg rounded-5 overflow-hidden">
-                        <div class="card-body p-4 p-md-5">
-                            <div class="service-icon-box">
-                                <i class="fa-solid fa-passport"></i>
-                            </div>
-                            <h3 class="fw-bold h4 mb-3">Express Entry & PNP</h3>
-                            <p class="text-muted small mb-4">Gestionamos tu perfil en el sistema federal y buscamos nominaciones provinciales estratégicas para asegurar tu residencia permanente.</p>
-                            <ul class="list-unstyled small text-muted mb-4">
-                                <li class="mb-2"><i class="fa-solid fa-check text-turquoise me-2"></i>Cálculo de puntaje CRS</li>
-                                <li class="mb-2"><i class="fa-solid fa-check text-turquoise me-2"></i>Estrategia de Nominación Provincial</li>
-                                <li class="mb-2"><i class="fa-solid fa-check text-turquoise me-2"></i>Gestión de ITA y documentos</li>
-                            </ul>
-                            <a href="contacto.html" class="btn btn-turquoise w-100 rounded-pill fw-bold">Saber más</a>
+                <!-- Article 1 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                    <div class="card product-card h-100 shadow-lg border-0 rounded-4 overflow-hidden">
+                        <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800');">
+                            <span class="product-badge">Tendencias</span>
+                        </div>
+                        <div class="product-body p-4">
+                            <h3 class="fw-bold h5 mb-2">Nuevas Cuotas 2026: ¿Qué esperar?</h3>
+                            <p class="text-muted x-small mb-3"><i class="fa-solid fa-calendar-days me-2"></i>Octubre 2023</p>
+                            <p class="text-muted small mb-4">Análisis detallado de los nuevos objetivos de inmigración anunciados por el gobierno canadiense para el próximo año.</p>
+                            <a href="#" class="text-turquoise fw-bold text-decoration-none small hover-arrow">Leer artículo completo <i class="fa-solid fa-arrow-right ms-1"></i></a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Bloque 2: Permisos de Estudio y Trabajo -->
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card product-card h-100 border-0 shadow-lg rounded-5 overflow-hidden">
-                        <div class="card-body p-4 p-md-5">
-                            <div class="service-icon-box">
-                                <i class="fa-solid fa-graduation-cap"></i>
-                            </div>
-                            <h3 class="fw-bold h4 mb-3">Permisos de Estudio y Trabajo</h3>
-                            <p class="text-muted small mb-4">Te asesoramos en la elección de programas educativos elegibles para PGWP y gestionamos tus permisos de trabajo abiertos o cerrados.</p>
-                            <ul class="list-unstyled small text-muted mb-4">
-                                <li class="mb-2"><i class="fa-solid fa-check text-turquoise me-2"></i>Inscripción en DLI (Instituciones Designadas)</li>
-                                <li class="mb-2"><i class="fa-solid fa-check text-turquoise me-2"></i>Visas de Residente Temporal</li>
-                                <li class="mb-2"><i class="fa-solid fa-check text-turquoise me-2"></i>Permisos Post-Graduación</li>
-                            </ul>
-                            <a href="contacto.html" class="btn btn-turquoise w-100 rounded-pill fw-bold">Saber más</a>
+                <!-- Article 2 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card product-card h-100 shadow-lg border-0 rounded-4 overflow-hidden">
+                        <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=800');">
+                            <span class="product-badge">Vida en Canadá</span>
+                        </div>
+                        <div class="product-body p-4">
+                            <h3 class="fw-bold h5 mb-2">Guía de Vivienda en Toronto</h3>
+                            <p class="text-muted x-small mb-3"><i class="fa-solid fa-calendar-days me-2"></i>Septiembre 2023</p>
+                            <p class="text-muted small mb-4">Todo lo que necesitas saber para alquilar tu primer apartamento en la ciudad más vibrante de Canadá: zonas, precios y requisitos.</p>
+                            <a href="#" class="text-turquoise fw-bold text-decoration-none small hover-arrow">Leer artículo completo <i class="fa-solid fa-arrow-right ms-1"></i></a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Bloque 3: Patrocinio Familiar -->
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card product-card h-100 border-0 shadow-lg rounded-5 overflow-hidden">
-                        <div class="card-body p-4 p-md-5">
-                            <div class="service-icon-box">
-                                <i class="fa-solid fa-people-roof"></i>
-                            </div>
-                            <h3 class="fw-bold h4 mb-3">Patrocinio Familiar</h3>
-                            <p class="text-muted small mb-4">Ayudamos a ciudadanos y residentes permanentes a traer a sus seres queridos a través de programas de patrocinio de parejas, hijos y padres.</p>
-                            <ul class="list-unstyled small text-muted mb-4">
-                                <li class="mb-2"><i class="fa-solid fa-check text-turquoise me-2"></i>Patrocinio de Cónyuge/Pareja</li>
-                                <li class="mb-2"><i class="fa-solid fa-check text-turquoise me-2"></i>Dependientes económicos</li>
-                                <li class="mb-2"><i class="fa-solid fa-check text-turquoise me-2"></i>Super Visa para Padres/Abuelos</li>
-                            </ul>
-                            <a href="contacto.html" class="btn btn-turquoise w-100 rounded-pill fw-bold">Saber más</a>
+                <!-- Article 3 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card product-card h-100 shadow-lg border-0 rounded-4 overflow-hidden">
+                        <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1454165833762-0265129b0021?auto=format&fit=crop&q=80&w=800');">
+                            <span class="product-badge">Profesional</span>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Bloque 4: LMIA para Empresas -->
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card product-card h-100 border-0 shadow-lg rounded-5 overflow-hidden">
-                        <div class="card-body p-4 p-md-5">
-                            <div class="service-icon-box">
-                                <i class="fa-solid fa-building-circle-check"></i>
-                            </div>
-                            <h3 class="fw-bold h4 mb-3">LMIA para Empresas</h3>
-                            <p class="text-muted small mb-4">Brindamos soporte a empleadores canadienses para la obtención de la Evaluación de Impacto en el Mercado Laboral y contratación de extranjeros.</p>
-                            <ul class="list-unstyled small text-muted mb-4">
-                                <li class="mb-2"><i class="fa-solid fa-check text-turquoise me-2"></i>Gestión ante Service Canada</li>
-                                <li class="mb-2"><i class="fa-solid fa-check text-turquoise me-2"></i>Cumplimiento de normativas laborales</li>
-                                <li class="mb-2"><i class="fa-solid fa-check text-turquoise me-2"></i>Reclutamiento Internacional</li>
-                            </ul>
-                            <a href="contacto.html" class="btn btn-turquoise w-100 rounded-pill fw-bold">Saber más</a>
+                        <div class="product-body p-4">
+                            <h3 class="fw-bold h5 mb-2">Cómo homologar tu título en Canadá</h3>
+                            <p class="text-muted x-small mb-3"><i class="fa-solid fa-calendar-days me-2"></i>Agosto 2023</p>
+                            <p class="text-muted small mb-4">Pasos esenciales para la Evaluación de Credenciales Educativas (ECA) y el reconocimiento de tu profesión en el mercado local.</p>
+                            <a href="#" class="text-turquoise fw-bold text-decoration-none small hover-arrow">Leer artículo completo <i class="fa-solid fa-arrow-right ms-1"></i></a>
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,204 @@
+= Adecuaciones página web Integral Consulting =
+
+PESTAÑAS
+I N I C I O
+Agregar botón cambiar de idioma [Inglés, Francés y Español]
+¿Agregar botón de “Enviar/recibir Notificaciones”? (ej. Cn.mdccanada.ca/es)
+
+Cambiar frase inicial por [¡Impulsa tu potencial y conviértelo en éxito!]
+Cambiar descripción inicial por “Brindamos orientación especializada para que su proceso de inmigración sea fácil, asequible y confiable”
+Editar título botón “Evaluación Gratuita” por “Evaluación de elegibilidad gratuita”
+
+Editar “Asesoría legal certificada” por “Asesoría legal garantizada”
+Editar “Soporte 24/7 Personalizado” por “Soporte Personalizado 24/7”
+
+Mover apartado “Garantía legal y Transparencia” al final de la página.  🡪  Propuesta para validador licencias ejecutivos/consultores.   🡪   ¿App o Función dentro de página web?
+
+Editar “Nuestro proceso en 3 pasos” por “En que consiste nuestro proceso”
+Complete una evaluación de elegibilidad y desarrollemos un plan de inmigración de acuerdo a sus necesidades
+Obtenga acceso a su propio perfil web para descargar documentos fácilmente y chatear directamente con nuestros agentes.
+Evaluaremos su perfil, presentaremos todos los formularios y la documentación mediante el programa asignado.
+Reciba una respuesta a las evaluaciones y determina tu posible elegibilidad dentro del mercado laboral.
+Reciba asesoramiento profesional, apoyo y orientación en cada paso de tu proceso.
+
+Agregar apartado general de servicios con breve descripción. [Referencia Integral Webnode]
+
+Eliminar apartado “líderes en el mercado”
+Eliminar apartado “Canada por provincias”
+
+Unificar apartado “¿Eres elegible para canada?” con botón inicial “Evaluación Gratuita”
+
+Modificar “Casos de éxito” como pestaña. 
+
+
+N O S O T R O S
+Experiencia que genera confianza  🡪  Eliminar segundo párrafo del apartado (Nuestra sede en…)
+
+Editar valores que nos definen:
+Ética legal 🡪 quitar segunda oración “estándares del CICC”
+Integralidad 🡪 modificarlo por Colaboración 
+Consultores certificados 🡪 
+
+S E R V I C I O S
+Agregar como pestaña
+Agregar Título, ícono e información general de cada servicio [Referencia Integral Webnode]
+
+P R O V I N C I A S
+Eliminar pestaña
+Edición posterior con información específica de algunas provincias [Geografía, Cultura y Patrimonio, Turismo, Educación, Atención médica, etc] (ej. Cn.mdccanada.ca/es 🡪  pestaña “Sobre Canada”)
+
+V A C A N T E S
+Editar y agregar vacantes: 
+Auxiliar de construcción
+Toronto, ON
+28-35 CAD/hr
+2+ años de experiencia
+
+
+Cocinero
+Calgary, AB
+25-31 CAD/hr
+2+ años de experiencia / Inglés básico
+
+
+Transportista
+Vancouver, BC
+28-37 CAD/hr
+2+ años de experiencia / Inglés básico
+
+
+Agricultor
+Vancouver, BC
+26-37 CAD/hr
+3+ años de experiencia / Inglés no necesario
+
+
+Maquilador
+Montreal, QC
+25-33 CAD/hr
+2+ años de experiencia / Inglés no necesario
+Recolector de flores
+Calgary, AB
+25-32 CAD/hr
+1+ años de experiencia / Inglés básico
+Mecánico Industrial
+Montreal, QC
+30-42 CAD/hr
+4+ años de experiencia / Inglés avanzado
+
+
+Recepcionista
+Toronto, ON
+27-34 CAD/hr
+3+ años de experiencia / Inglés avanzado
+
+
+Operador de maquinaria
+Montreal, QC
+27-35 CAD/hr
+2+ años de experiencia
+Instalador de estructuras
+Calgary, AB
+27-34 CAD/hr
+2+ años de experiencia / Inglés no necesario
+
+
+Guardia de seguridad
+Calgary, AB
+25-31 CAD/hr
+2+ años de experiencia
+Almacenista
+Calgary, AB
+25-34 CAD/hr
+2+ años de experiencia
+
+
+B L O G    🡪    N O T I C I A S
+Cambiar título por “NOTICIAS”
+
+Colocar apartado “Suscríbete a nuestro boletín” al inicio de la pestaña
+
+
+Notas relacionadas a problemas que la empresa puede resolver.
+Apartado para noticias estáticas de mucha relevancia.
+Apartado para noticias generales transitorias (IA).
+Definir noticias para: inmigración, empleo, estilo de vida y educación
+
+
+P R E G U N T A S  F R E C U E N T E S
+Agregar como pestaña.
+
+Editar/definir preguntas y respuestas.
+4- ¿Cuáles son las tarifas de solicitud de VISA para Canadá? 
+El gobierno canadiense cobra tarifas variables por la presentación de diferentes formularios de inmigración. Esto no es exclusivo del gobierno canadiense, ya que la mayoría, si no todos, los países requieren que se paguen tarifas de procesamiento a la autoridad de inmigración. 
+Las tarifas pueden oscilar entre: VISA 100 CAD, Toma de Biométricos 85 CAD y eTA 7 CAD
+Un punto importante a tener en cuenta es que las tarifas gubernamentales no son reembolsables. Por esta razón, es de vital importancia asegurarse de que sus documentos se presenten a tiempo, sean correctos y completos.
+
+5.- ¿Cuáles son los requisitos de las pruebas de inglés o francés?
+Tanto el francés como el inglés son idiomas oficiales en Canadá. Los recién llegados deben, por lo tanto, demostrar su habilidad básica en uno de estos idiomas para demostrar que pueden establecerse en el país. Como parte del proceso de inmigración, se le exige que se someta a una prueba de idioma estandarizada.
+
+6.- ¿Cuáles son los factores en el sistema de puntos para la aprobación de la VISA canadiense?
+Se tienen en cuenta seis factores para determinar su elegibilidad para los Programas para Trabajadores Calificados.
+Habilidades básicas de inglés o francés
+Educación
+Experiencia laboral
+Edad
+Empleo organizado en Canadá
+Adaptabilidad
+
+
+
+C A S O S  D E  E X I T O
+Agregar como pestaña
+Agregar apartado con foto de la persona/empresa, nombre y descripción.
+¿Agregar botón “fake” para checar más información de los usuarios?
+
+A V I S O  D E  P R I V A C I D A D
+Agregar como pestaña 
+Agregar breve descripción sobre el manejo de la información de los usuarios
+Anexar Aviso de Privacidad (PDF)
+
+C O N T A C T O
+Cambiar descripción por “Estamos listos para ayudarte a dar el siguiente paso.
+
+Editar información de contacto
+Mail:
+contact@integralconsulting.site
+
+Dirección Oficinas: 
+Lago Alberto 319, Col. Granada, Alc. Miguel Hidalgo, 11520, CDMX
+
+Números telefónicos:
+55 4905 0421
+56 3214 9233
+
+Cambiar “Solicita tu evaluación estratégica” por “Solicita una evaluación de Aplicabilidad”
+Cambiar “Ruta de Interés” por “Proceso de Interés”
+
+Quitar Preguntas Frecuentes del apartado, dejarlo como pestaña.
+
+C I T A  G R A T U I T A  🡪  A S E S O R I A  G R A T U I T A
+Cambiar título de botón por “ Aseoría gratuita
+
+
+
+
+
+P I E  D E  P A G I N A
+R E D E S  S O C I A L E S
+Crear y posicionar redes
+Facebook, Linkedin, Instagram
+
+S E D E S
+Dirección CDMX: Lago Alberto 319, Col. Granada, Alc. Miguel Hidalgo, 11520, CDMX
+Definir sede en Canadá
+
+D E S C R I P C I O N  F I N A L
+Cambiar por: © 2026 Integral Consulting. Todos los derechos reservados. 
+
+
+I M A G E N E S
+Actualizar imágenes/fondos sin marca de agua
+¿Hacer imágenes IA?
+Actualizar y agregar logos sin fondo
+

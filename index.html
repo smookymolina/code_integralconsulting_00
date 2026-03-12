@@ -4,31 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Integral Consulting | Especialistas en Canadá</title>
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Custom Style -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="/index.js"></script>
 </head>
 <body class="home-page">
+    <div id="preloader"><div class="loader-content"><img src="assets/img/logo3.jpeg" alt="Integral Consulting" class="loader-logo-small"></div></div>
 
     <!-- News Alert Bar -->
     <div class="alert alert-dismissible fade show news-alert-bar text-center mb-0" role="alert">
         <div class="container">
             <i class="fa-solid fa-bullhorn text-turquoise me-2"></i>
             Última hora: <strong>Cambios en las cuotas de Express Entry para 2026.</strong> 
-            <a href="blog.html" class="ms-2">Leer más <i class="fa-solid fa-arrow-right small"></i></a>
+            <a href="noticias.html" class="ms-2">Leer más <i class="fa-solid fa-arrow-right small"></i></a>
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
     </div>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light" id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="assets/img/logo3.jpeg" alt="Integral Consulting" id="navLogo">
             </a>
+            <div class="d-flex align-items-center order-lg-last ms-lg-3">
+                <!-- Language Switcher -->
+                <div class="dropdown me-2">
+                    <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-globe me-1"></i> ES
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item active" href="#">Español</a></li>
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                        <li><a class="dropdown-item" href="#">Français</a></li>
+                    </ul>
+                </div>
+                <!-- Notifications Bell -->
+                <button class="btn btn-sm btn-link text-dark me-2 position-relative" title="Notificaciones">
+                    <i class="fa-solid fa-bell fs-5"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger border border-light" style="font-size: 0.5rem; padding: 0.35em 0.5em;">
+                        1
+                    </span>
+                </button>
+                <a href="contacto.html" class="btn btn-turquoise shadow-sm d-none d-sm-inline-block">Asesoría Gratuita</a>
+            </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -36,28 +55,27 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link" href="provincias.html">Provincias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
                     <li class="nav-item"><a class="nav-link" href="vacantes.html">Vacantes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="casos-exito.html">Casos de Éxito</a></li>
+                    <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="preguntas.html">Preguntas Frecuentes</a></li>
                     <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-                    <li class="nav-item ms-lg-3">
-                        <a href="contacto.html" class="btn btn-turquoise">Cita Gratuita</a>
-                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero">
+    <header class="hero d-flex align-items-center">
         <div class="container">
             <div class="row">
-                <div class="col-lg-7">
-                    <h1 class="display-2 fw-bold mb-4">Descubre tu futuro en <span class="text-turquoise">Canadá</span></h1>
-                    <p class="fs-4 mb-5 opacity-75">Servicios migratorios premium y gestión de talento internacional con más de 15 años de experiencia real en el mercado canadiense.</p>
-                    <div class="d-flex gap-3">
-                        <a href="vacantes.html" class="btn btn-turquoise btn-lg">Explorar Empleos</a>
-                        <a href="contacto.html" class="btn btn-outline-light btn-lg">Evaluación Gratuita</a>
+                <div class="col-lg-7" data-aos="fade-right">
+                    <h1 class="display-1 fw-bold mb-4">¡Impulsa tu potencial y <span class="text-turquoise">conviértelo en éxito!</span></h1>
+                    <p class="fs-4 mb-5 opacity-75">Brindamos orientación especializada para que su proceso de inmigración sea fácil, asequible y confiable</p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="vacantes.html" class="btn btn-turquoise btn-lg px-4 shadow">Explorar Empleos</a>
+                        <a href="#eligibility-quiz" class="btn btn-outline-light btn-lg px-4">Evaluación de elegibilidad gratuita</a>
                     </div>
                 </div>
             </div>
@@ -65,193 +83,150 @@
     </header>
 
     <!-- Trust Center -->
-    <section class="trust-center">
+    <section class="trust-center py-4 bg-dark text-white shadow" data-aos="fade-up">
         <div class="container">
             <div class="row text-center g-4">
                 <div class="col-md-4">
                     <div class="trust-item justify-content-center">
-                        <i class="fa-solid fa-gavel"></i>
-                        <span class="fw-bold text-uppercase">Asesoría Legal Certificada</span>
+                        <i class="fa-solid fa-gavel text-turquoise fs-3 mb-2 d-block"></i>
+                        <span class="fw-bold text-uppercase small">Asesoría Legal Garantizada</span>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="trust-item justify-content-center border-start border-white border-opacity-25">
-                        <i class="fa-solid fa-trophy"></i>
-                        <span class="fw-bold text-uppercase">15+ Años de Éxito</span>
+                <div class="col-md-4 border-md-start border-white border-opacity-25">
+                    <div class="trust-item justify-content-center">
+                        <i class="fa-solid fa-trophy text-turquoise fs-3 mb-2 d-block"></i>
+                        <span class="fw-bold text-uppercase small">15+ Años de Éxito</span>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="trust-item justify-content-center border-start border-white border-opacity-25">
-                        <i class="fa-solid fa-headset"></i>
-                        <span class="fw-bold text-uppercase">Soporte 24/7 Personalizado</span>
+                <div class="col-md-4 border-md-start border-white border-opacity-25">
+                    <div class="trust-item justify-content-center">
+                        <i class="fa-solid fa-headset text-turquoise fs-3 mb-2 d-block"></i>
+                        <span class="fw-bold text-uppercase small">Soporte Personalizado 24/7</span>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Garantía Legal Banner -->
-    <section class="py-5 bg-dark text-white text-center border-top border-bottom border-turquoise border-3">
-        <div class="container py-4">
-            <i class="fa-solid fa-shield-halved display-4 text-turquoise mb-3"></i>
-            <h2 class="display-6 fw-bold mb-3">Garantía Legal y Transparencia</h2>
-            <p class="lead mb-4 mx-auto" style="max-width: 800px;">Operamos bajo las más estrictas normativas canadienses. Somos miembros activos y regulados por el <strong>College of Immigration and Citizenship Consultants (CICC)</strong>.</p>
-            <div class="d-inline-flex align-items-center bg-white text-dark px-4 py-2 rounded-pill fw-bold shadow-sm">
-                <i class="fa-solid fa-id-card text-turquoise me-2 fs-5"></i>
-                Licencia CICC: <span class="text-turquoise ms-2">#RXXXXXX</span>
             </div>
         </div>
     </section>
 
     <!-- Our Process -->
-    <section class="py-5 bg-white mt-5">
-        <div class="container py-5 text-center">
-            <h2 class="display-5 fw-bold mb-5">Nuestro Proceso en <span class="text-turquoise">3 Pasos</span></h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="step-item">
-                        <div class="step-number">1</div>
-                        <h4 class="fw-bold">Evaluación Inicial</h4>
-                        <p class="text-muted">Analizamos tu perfil profesional, académico y nivel de idiomas para determinar la mejor ruta migratoria.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="step-item">
-                        <div class="step-number">2</div>
-                        <h4 class="fw-bold">Estrategia y Vacantes</h4>
-                        <p class="text-muted">Te conectamos con empleadores canadienses y preparamos toda la documentación legal necesaria.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="step-item">
-                        <div class="step-number">3</div>
-                        <h4 class="fw-bold">Viaje y Soporte</h4>
-                        <p class="text-muted">Te acompañamos en tu llegada a Canadá y te brindamos soporte continuo en tu integración laboral.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Stats -->
-    <section class="py-5 bg-light">
-        <div class="container py-5">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-6">
-                    <img src="https://images.unsplash.com/photo-1490644659564-e4d9302149d8?auto=format&fit=crop&q=80&w=800" class="img-fluid rounded shadow" alt="Vancouver Skyline">
-                </div>
-                <div class="col-lg-6">
-                    <h2 class="display-5 fw-bold mb-4">Líderes en el Mercado Canadiense</h2>
-                    <p class="text-muted lead mb-4">No solo somos consultores, somos tus socios estratégicos en Toronto, Vancouver, Montreal y Calgary.</p>
-                    <ul class="list-unstyled mb-5">
-                        <li class="mb-3"><i class="fa-solid fa-check text-turquoise me-2"></i> Especialistas en Reclutamiento de Oficios y TI</li>
-                        <li class="mb-3"><i class="fa-solid fa-check text-turquoise me-2"></i> Gestión garantizada de LMIA y Permisos de Trabajo</li>
-                        <li class="mb-3"><i class="fa-solid fa-check text-turquoise me-2"></i> Soporte en reubicación familiar y búsqueda de vivienda</li>
-                    </ul>
-                    <a href="nosotros.html" class="btn btn-turquoise">Conoce nuestra historia</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Canadá por Provincias Carousel -->
     <section class="py-5 bg-white">
-        <div class="container py-5">
-            <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold">Canadá por Provincias</h2>
-                <p class="text-muted">Descubre las oportunidades y sectores dominantes en las principales regiones del país.</p>
-            </div>
-            <div id="provincesCarousel" class="carousel slide shadow-lg rounded overflow-hidden" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#provincesCarousel" data-bs-slide-to="0" class="active"></button>
-                    <button type="button" data-bs-target="#provincesCarousel" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#provincesCarousel" data-bs-slide-to="2"></button>
-                </div>
-                <div class="carousel-inner">
-                    <!-- Ontario -->
-                    <div class="carousel-item active">
-                        <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&q=80&w=1200'); height: 500px;">
-                            <div class="position-absolute bottom-0 start-0 w-100 p-5" style="background: linear-gradient(transparent, rgba(0,0,0,0.9));">
-                                <h3 class="text-white fw-bold display-6 mb-2">Ontario (Toronto & Ottawa)</h3>
-                                <p class="text-white-50 mb-0 fs-5"><i class="fa-solid fa-industry text-turquoise me-2"></i> Sectores Dominantes: Tecnología, Finanzas, Manufactura Avanzada y Salud.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- British Columbia -->
-                    <div class="carousel-item">
-                        <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1559511260-66a654ae982a?auto=format&fit=crop&q=80&w=1200'); height: 500px;">
-                            <div class="position-absolute bottom-0 start-0 w-100 p-5" style="background: linear-gradient(transparent, rgba(0,0,0,0.9));">
-                                <h3 class="text-white fw-bold display-6 mb-2">British Columbia (Vancouver)</h3>
-                                <p class="text-white-50 mb-0 fs-5"><i class="fa-solid fa-industry text-turquoise me-2"></i> Sectores Dominantes: Cinematografía, Desarrollo de Software, Turismo y Comercio Internacional.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Alberta -->
-                    <div class="carousel-item">
-                        <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1614605553108-9dfba5191334?auto=format&fit=crop&q=80&w=1200'); height: 500px;">
-                            <div class="position-absolute bottom-0 start-0 w-100 p-5" style="background: linear-gradient(transparent, rgba(0,0,0,0.9));">
-                                <h3 class="text-white fw-bold display-6 mb-2">Alberta (Calgary & Edmonton)</h3>
-                                <p class="text-white-50 mb-0 fs-5"><i class="fa-solid fa-industry text-turquoise me-2"></i> Sectores Dominantes: Energía, Ingeniería, Construcción Pesada y Agricultura.</p>
-                            </div>
-                        </div>
+        <div class="container py-5 text-center">
+            <h2 class="display-5 fw-bold mb-5" data-aos="fade-down">¿En qué consiste <span class="text-turquoise">nuestro proceso?</span></h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-card p-4 rounded-4 shadow-sm h-100 border">
+                        <div class="step-number-badge mb-3">1</div>
+                        <p class="small text-muted mb-0">Complete una evaluación de elegibilidad y desarrollemos un plan de inmigración de acuerdo a sus necesidades</p>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#provincesCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#provincesCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Siguiente</span>
-                </button>
+                <div class="col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-card p-4 rounded-4 shadow-sm h-100 border">
+                        <div class="step-number-badge mb-3">2</div>
+                        <p class="small text-muted mb-0">Obtenga acceso a su propio perfil web para descargar documentos fácilmente y chatear directamente con nuestros agentes.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-card p-4 rounded-4 shadow-sm h-100 border">
+                        <div class="step-number-badge mb-3">3</div>
+                        <p class="small text-muted mb-0">Evaluaremos su perfil, presentaremos todos los formularios y la documentación mediante el programa asignado.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="400">
+                    <div class="step-card p-4 rounded-4 shadow-sm h-100 border">
+                        <div class="step-number-badge mb-3">4</div>
+                        <p class="small text-muted mb-0">Reciba una respuesta a las evaluaciones y determina tu posible elegibilidad dentro del mercado laboral.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="500">
+                    <div class="step-card p-4 rounded-4 shadow-sm h-100 border">
+                        <div class="step-number-badge mb-3">5</div>
+                        <p class="small text-muted mb-0">Reciba asesoramiento profesional, apoyo y orientación en cada paso de tu proceso.</p>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
+
+    <!-- General Services Summary -->
+    <section class="py-5 bg-light">
+        <div class="container py-5 text-center">
+            <h2 class="display-5 fw-bold mb-5" data-aos="fade-down">Nuestros <span class="text-turquoise">Servicios</span></h2>
+            <p class="lead text-muted mb-5 mx-auto" style="max-width: 800px;">Ofrecemos soluciones integrales para todas sus necesidades migratorias en Canadá, desde programas de trabajadores calificados hasta reunificación familiar y estudios.</p>
+            <div class="row g-4 text-center">
+                <div class="col-md-3">
+                    <div class="p-4">
+                        <i class="fa-solid fa-passport text-turquoise fs-1 mb-3"></i>
+                        <h5 class="fw-bold">Express Entry</h5>
+                        <p class="small text-muted">Gestión federal para trabajadores calificados.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-4">
+                        <i class="fa-solid fa-graduation-cap text-turquoise fs-1 mb-3"></i>
+                        <h5 class="fw-bold">Estudios</h5>
+                        <p class="small text-muted">Permisos de estudio y post-graduación.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-4">
+                        <i class="fa-solid fa-people-roof text-turquoise fs-1 mb-3"></i>
+                        <h5 class="fw-bold">Familia</h5>
+                        <p class="small text-muted">Patrocinio de cónyuges e hijos.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-4">
+                        <i class="fa-solid fa-building-circle-check text-turquoise fs-1 mb-3"></i>
+                        <h5 class="fw-bold">LMIA</h5>
+                        <p class="small text-muted">Trámites para empleadores canadienses.</p>
+                    </div>
+                </div>
+            </div>
+            <a href="servicios.html" class="btn btn-turquoise btn-lg px-5 mt-4">Ver todos los servicios</a>
         </div>
     </section>
 
     <!-- Eligibility Quiz Section -->
-    <section class="py-5 bg-light" id="eligibility-quiz">
+    <section class="py-5 bg-white" id="eligibility-quiz">
         <div class="container py-5">
             <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="quiz-container bg-white p-4 p-md-5 rounded-4 shadow-sm text-center">
+                <div class="col-lg-8" data-aos="zoom-in-up">
+                    <div class="quiz-container bg-light p-4 p-md-5 rounded-5 shadow text-center border">
                         <div id="quiz-intro">
                             <h2 class="display-5 fw-bold mb-3">¿Eres elegible para <span class="text-turquoise">Canadá</span>?</h2>
-                            <p class="text-muted lead mb-5">Responde 3 preguntas rápidas y descubre tu mejor ruta migratoria en menos de un minuto.</p>
-                            <button class="btn btn-turquoise btn-lg px-5 py-3 rounded-pill fw-bold" onclick="startQuiz()">Comenzar Evaluación</button>
+                            <p class="text-muted lead mb-5">Responde 3 preguntas rápidas y descubre tu mejor ruta migratoria.</p>
+                            <button class="btn btn-turquoise btn-lg px-5 py-3 rounded-pill fw-bold shadow" onclick="startQuiz()">Comenzar Evaluación</button>
                         </div>
 
-                        <!-- Question 1 -->
+                        <!-- Questions remain same but with enhanced styling -->
                         <div id="question-1" class="quiz-step d-none">
-                            <span class="badge bg-turquoise mb-3">Pregunta 1 de 3</span>
+                            <span class="badge bg-turquoise px-3 py-2 mb-3">Pregunta 1 de 3</span>
                             <h3 class="fw-bold mb-4">¿Cuál es tu nivel de inglés?</h3>
                             <div class="d-grid gap-3">
-                                <button class="btn btn-outline-turquoise btn-lg py-3 rounded-3" onclick="nextQuestion(1, 'alto')">Alto (IELTS 7+ / Fluido)</button>
-                                <button class="btn btn-outline-turquoise btn-lg py-3 rounded-3" onclick="nextQuestion(1, 'medio')">Medio (IELTS 5-6 / Conversacional)</button>
-                                <button class="btn btn-outline-turquoise btn-lg py-3 rounded-3" onclick="nextQuestion(1, 'bajo')">Bajo / Principiante</button>
+                                <button class="btn btn-outline-dark btn-lg py-3 rounded-4 transition-all" onclick="nextQuestion(1, 'alto')">Alto (IELTS 7+ / Fluido)</button>
+                                <button class="btn btn-outline-dark btn-lg py-3 rounded-4 transition-all" onclick="nextQuestion(1, 'medio')">Medio (IELTS 5-6 / Conversacional)</button>
+                                <button class="btn btn-outline-dark btn-lg py-3 rounded-4 transition-all" onclick="nextQuestion(1, 'bajo')">Bajo / Principiante</button>
                             </div>
                         </div>
 
-                        <!-- Question 2 -->
                         <div id="question-2" class="quiz-step d-none">
-                            <span class="badge bg-turquoise mb-3">Pregunta 2 de 3</span>
+                            <span class="badge bg-turquoise px-3 py-2 mb-3">Pregunta 2 de 3</span>
                             <h3 class="fw-bold mb-4">¿Tienes un título profesional o técnico?</h3>
                             <div class="d-grid gap-3">
-                                <button class="btn btn-outline-turquoise btn-lg py-3 rounded-3" onclick="nextQuestion(2, 'si')">Sí, tengo título universitario o técnico</button>
-                                <button class="btn btn-outline-turquoise btn-lg py-3 rounded-3" onclick="nextQuestion(2, 'no')">No, pero tengo experiencia laboral</button>
+                                <button class="btn btn-outline-dark btn-lg py-3 rounded-4" onclick="nextQuestion(2, 'si')">Sí, tengo título universitario o técnico</button>
+                                <button class="btn btn-outline-dark btn-lg py-3 rounded-4" onclick="nextQuestion(2, 'no')">No, pero tengo experiencia laboral</button>
                             </div>
                         </div>
 
-                        <!-- Question 3 -->
                         <div id="question-3" class="quiz-step d-none">
-                            <span class="badge bg-turquoise mb-3">Pregunta 3 de 3</span>
+                            <span class="badge bg-turquoise px-3 py-2 mb-3">Pregunta 3 de 3</span>
                             <h3 class="fw-bold mb-4">¿Tienes una oferta de trabajo en Canadá?</h3>
                             <div class="d-grid gap-3">
-                                <button class="btn btn-outline-turquoise btn-lg py-3 rounded-3" onclick="showResult('si')">Sí, ya tengo una oferta validada</button>
-                                <button class="btn btn-outline-turquoise btn-lg py-3 rounded-3" onclick="showResult('no')">No, estoy buscando una oportunidad</button>
+                                <button class="btn btn-outline-dark btn-lg py-3 rounded-4" onclick="showResult('si')">Sí, ya tengo una oferta validada</button>
+                                <button class="btn btn-outline-dark btn-lg py-3 rounded-4" onclick="showResult('no')">No, estoy buscando una oportunidad</button>
                             </div>
                         </div>
 
-                        <!-- Result -->
                         <div id="quiz-result" class="quiz-step d-none">
                             <div class="result-icon mb-4">
                                 <i class="fa-solid fa-circle-check text-success display-1"></i>
@@ -259,7 +234,7 @@
                             <h3 class="fw-bold mb-3" id="result-title">Análisis de Perfil</h3>
                             <p class="lead text-muted mb-5" id="result-text"></p>
                             <div class="d-flex flex-column flex-md-row gap-3 justify-content-center">
-                                <a href="contacto.html" class="btn btn-turquoise btn-lg px-4 py-3 rounded-pill fw-bold">Agendar Evaluación Detallada</a>
+                                <a href="contacto.html" class="btn btn-turquoise btn-lg px-4 py-3 rounded-pill fw-bold shadow">Agendar Evaluación</a>
                                 <button class="btn btn-outline-secondary btn-lg px-4 py-3 rounded-pill fw-bold" onclick="resetQuiz()">Reiniciar Test</button>
                             </div>
                         </div>
@@ -269,91 +244,96 @@
         </div>
     </section>
 
-    <!-- Testimonials -->
-    <section class="py-5 bg-white">
-        <div class="container py-5">
-            <h2 class="display-5 fw-bold text-center mb-5">Casos de Éxito</h2>
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="testimonial-card">
-                        <i class="fa-solid fa-quote-left"></i>
-                        <p class="lead mb-4">"Gracias a Integral Consulting, hoy trabajo como carpintero en Toronto con un sueldo que nunca imaginé. El proceso fue claro y siempre estuvieron ahí para resolver mis dudas."</p>
-                        <h5 class="fw-bold mb-0">Carlos M.</h5>
-                        <small class="text-turquoise">Carpintero • Reubicado desde México</small>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="testimonial-card">
-                        <i class="fa-solid fa-quote-left"></i>
-                        <p class="lead mb-4">"El equipo me ayudó a conseguir una oferta de trabajo en Vancouver como desarrolladora. Me guiaron en cada paso de la visa y hoy mi familia tiene la residencia permanente."</p>
-                        <h5 class="fw-bold mb-0">Ana L.</h5>
-                        <small class="text-turquoise">Software Engineer • Reubicada desde Colombia</small>
-                    </div>
-                </div>
+    <!-- Garantía Legal Banner -->
+    <section class="py-5 bg-light text-center border-top border-bottom border-turquoise border-3" data-aos="zoom-in">
+        <div class="container py-4">
+            <i class="fa-solid fa-shield-halved display-4 text-turquoise mb-3"></i>
+            <h2 class="display-6 fw-bold mb-3">Garantía Legal y Transparencia</h2>
+            <p class="lead mb-4 mx-auto" style="max-width: 800px;">Operamos bajo las más estrictas normativas canadienses. Somos miembros activos y regulados por el <strong>College of Immigration and Citizenship Consultants (CICC)</strong>.</p>
+            <div class="d-inline-flex align-items-center bg-dark text-white px-4 py-2 rounded-pill fw-bold shadow">
+                <i class="fa-solid fa-id-card text-turquoise me-2 fs-5"></i>
+                Licencia CICC: <span class="text-turquoise ms-2">#RXXXXXX</span>
             </div>
         </div>
     </section>
 
-    <!-- Partners -->
-    <section class="py-5 border-top">
-        <div class="container py-4">
-            <div class="d-flex flex-wrap justify-content-center align-items-center gap-5">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg" class="partner-logo" alt="Government of Canada" style="width: 80px;">
-                <img src="https://images.unsplash.com/photo-1599305090748-36656ca01099?auto=format&fit=crop&q=80&w=200" class="partner-logo" alt="Partner 1">
-                <img src="https://images.unsplash.com/photo-1599305090748-36656ca01099?auto=format&fit=crop&q=80&w=200" class="partner-logo" alt="Partner 2">
-                <img src="https://images.unsplash.com/photo-1599305090748-36656ca01099?auto=format&fit=crop&q=80&w=200" class="partner-logo" alt="Partner 3">
+    <!-- License Validator Section -->
+    <section class="py-5 bg-white overflow-hidden">
+        <div class="container py-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h2 class="display-5 fw-bold mb-4">Validador de <span class="text-turquoise">Licencias</span></h2>
+                    <p class="text-muted lead mb-4">Para su seguridad, todos nuestros consultores cuentan con licencias vigentes ante el College of Immigration and Citizenship Consultants (CICC).</p>
+                    <div class="p-4 bg-light rounded-4 border shadow-sm">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fa-solid fa-user-check text-turquoise fs-3 me-3"></i>
+                            <h5 class="fw-bold mb-0">Verificar Consultor</h5>
+                        </div>
+                        <p class="small text-muted mb-4">Ingrese el número de licencia para verificar el estatus actual del consultor en la base de datos oficial.</p>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control rounded-pill-start px-4" placeholder="Ej: R123456">
+                            <button class="btn btn-dark rounded-pill-end px-4 fw-bold" type="button">Verificar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="card border-0 shadow-lg rounded-5 overflow-hidden">
+                        <div class="card-body p-5 text-center bg-dark text-white">
+                            <i class="fa-solid fa-certificate text-turquoise display-1 mb-4"></i>
+                            <h3 class="fw-bold">Compromiso con la Legalidad</h3>
+                            <p class="opacity-75">No confíe en consultores no regulados. El CICC protege a los consumidores contra fraudes y malas prácticas.</p>
+                            <a href="https://college-ic.ca/protecting-the-public/find-an-immigration-consultant" target="_blank" class="btn btn-turquoise mt-3 px-5 rounded-pill fw-bold">Verificar en Sitio Oficial</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="bg-dark text-white pt-5">
         <div class="container">
             <div class="row g-5">
-                <div class="col-lg-4">
-                    <div class="footer-logo">
-                        <img src="assets/img/logo1.jpeg" alt="Integral Consulting">
-                    </div>
-                    <p>Consultoría líder en servicios migratorios y recursos humanos, conectando talento global con el mercado canadiense con ética y profesionalismo.</p>
+                <div class="col-lg-4" data-aos="fade-up">
+                    <img src="assets/img/logo1.jpeg" alt="Integral Consulting" class="mb-4" style="height: 60px;">
+                    <p class="opacity-75">Consultoría líder en servicios migratorios y recursos humanos, conectando talento global con ética y profesionalismo.</p>
                     <div class="d-flex gap-3 mt-4">
-                        <a href="#" class="text-white fs-4"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#" class="text-white fs-4"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#" class="text-white fs-4"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="text-white fs-4 hover-turquoise"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="text-white fs-4 hover-turquoise"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" class="text-white fs-4 hover-turquoise"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
-                <div class="col-md-4 col-lg-2">
-                    <h5>Enlaces</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="nosotros.html">Nosotros</a></li>
-                        <li><a href="provincias.html">Provincias</a></li>
-                        <li><a href="vacantes.html">Vacantes</a></li>
-                        <li><a href="blog.html">Blog</a></li>
+                <div class="col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="100">
+                    <h5 class="fw-bold mb-4">Enlaces</h5>
+                    <ul class="list-unstyled opacity-75">
+                        <li class="mb-2"><a href="index.html" class="text-white text-decoration-none">Inicio</a></li>
+                        <li class="mb-2"><a href="nosotros.html" class="text-white text-decoration-none">Nosotros</a></li>
+                        <li class="nav-item"><a href="servicios.html" class="text-white text-decoration-none">Servicios</a></li>
+                        <li class="mb-2"><a href="vacantes.html" class="text-white text-decoration-none">Vacantes</a></li>
+                        <li class="mb-2"><a href="casos-exito.html" class="text-white text-decoration-none">Casos de Éxito</a></li>
+                        <li class="mb-2"><a href="privacidad.html" class="text-white text-decoration-none">Aviso de Privacidad</a></li>
                     </ul>
                 </div>
-                <div class="col-md-4 col-lg-3">
-                    <h5>Sedes</h5>
-                    <ul class="list-unstyled">
-                        <li><i class="fa-solid fa-location-dot text-turquoise me-2"></i> Toronto, Canada</li>
-                        <li><i class="fa-solid fa-location-dot text-turquoise me-2"></i> Ciudad de México, MX</li>
+                <div class="col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <h5 class="fw-bold mb-4">Sedes</h5>
+                    <ul class="list-unstyled opacity-75">
+                        <li class="mb-3"><i class="fa-solid fa-location-dot text-turquoise me-2"></i> Toronto, Canada</li>
+                        <li class="mb-3"><i class="fa-solid fa-location-dot text-turquoise me-2"></i> Lago Alberto 319, Col. Granada, Alc. Miguel Hidalgo, 11520, CDMX</li>
                     </ul>
                 </div>
-                <div class="col-md-4 col-lg-3">
-                    <h5>Contacto</h5>
-                    <ul class="list-unstyled">
-                        <li><i class="fa-solid fa-phone text-turquoise me-2"></i> +52 (55) 1234 5678</li>
-                        <li><i class="fa-solid fa-envelope text-turquoise me-2"></i> info@integralconsulting.ca</li>
+                <div class="col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <h5 class="fw-bold mb-4">Contacto</h5>
+                    <ul class="list-unstyled opacity-75">
+                        <li class="mb-3"><i class="fa-solid fa-phone text-turquoise me-2"></i> 55 4905 0421</li>
+                        <li class="mb-3"><i class="fa-solid fa-phone text-turquoise me-2"></i> 56 3214 9233</li>
+                        <li class="mb-3"><i class="fa-solid fa-envelope text-turquoise me-2"></i> contact@integralconsulting.site</li>
                     </ul>
                 </div>
             </div>
-            <div class="text-center pt-5 pb-3">
-                <p class="small">&copy; 2026 Integral Consulting. Todos los derechos reservados. Consultores autorizados ante el CICC.</p>
+            <div class="text-center pt-5 pb-3 border-top border-secondary mt-5">
+                <p class="small opacity-50">&copy; 2026 Integral Consulting. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
-
-    <!-- Bootstrap 5 JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/main.js"></script>
 </body>
 </html>

@@ -4,31 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros | Integral Consulting</title>
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Custom Style -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="/index.js"></script>
 </head>
-<body>
+<body class="about-page">
+    <div id="preloader"><div class="loader-content"><img src="assets/img/logo3.jpeg" alt="Integral Consulting" class="loader-logo-small"></div></div>
 
     <!-- News Alert Bar -->
     <div class="alert alert-dismissible fade show news-alert-bar text-center mb-0" role="alert">
         <div class="container">
             <i class="fa-solid fa-bullhorn text-turquoise me-2"></i>
             Última hora: <strong>Cambios en las cuotas de Express Entry para 2026.</strong> 
-            <a href="blog.html" class="ms-2">Leer más <i class="fa-solid fa-arrow-right small"></i></a>
+            <a href="noticias.html" class="ms-2">Leer más <i class="fa-solid fa-arrow-right small"></i></a>
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
     </div>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light" id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="assets/img/logo3.jpeg" alt="Integral Consulting">
+                <img src="assets/img/logo3.jpeg" alt="Integral Consulting" id="navLogo">
             </a>
+            <div class="d-flex align-items-center order-lg-last ms-lg-3">
+                <!-- Language Switcher -->
+                <div class="dropdown me-3">
+                    <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-globe me-1"></i> ES
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item active" href="#">Español</a></li>
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                        <li><a class="dropdown-item" href="#">Français</a></li>
+                    </ul>
+                </div>
+                <a href="contacto.html" class="btn btn-turquoise shadow-sm d-none d-sm-inline-block">Asesoría Gratuita</a>
+            </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -36,50 +48,48 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link active" href="nosotros.html">Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link" href="provincias.html">Provincias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
                     <li class="nav-item"><a class="nav-link" href="vacantes.html">Vacantes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="casos-exito.html">Casos de Éxito</a></li>
+                    <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="preguntas.html">Preguntas Frecuentes</a></li>
                     <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-                    <li class="nav-item ms-lg-3">
-                        <a href="contacto.html" class="btn btn-turquoise">Cita Gratuita</a>
-                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Page Header -->
-    <section class="py-5 mt-5 bg-light">
+    <header class="py-5 mt-5 bg-light" data-aos="fade-down">
         <div class="container py-5 text-center">
-            <h1 class="display-4 fw-bold">Nuestra Historia y Misión</h1>
+            <h1 class="display-4 fw-bold">Nuestra Historia y <span class="text-turquoise">Misión</span></h1>
             <p class="lead text-muted">Construyendo puentes hacia el éxito en Canadá por más de 15 años.</p>
         </div>
-    </section>
+    </header>
 
     <!-- Detailed Content -->
-    <section class="py-5">
+    <section class="py-5 overflow-hidden">
         <div class="container py-5">
             <div class="row g-5 align-items-center mb-5">
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-right">
                     <h2 class="display-6 fw-bold mb-4 text-turquoise">Experiencia que Genera Confianza</h2>
                     <p class="mb-4">Integral Consulting nació con la visión de profesionalizar el reclutamiento internacional y la consultoría migratoria. Entendemos que emigrar no es solo un trámite legal, sino un proyecto de vida que requiere acompañamiento humano y técnico de alto nivel.</p>
-                    <p class="mb-4">Nuestra sede en Toronto nos permite estar en contacto directo con las regulaciones migratorias (IRCC) y con las necesidades cambiantes del mercado laboral canadiense.</p>
                 </div>
-                <div class="col-lg-6">
-                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800" class="img-fluid shadow rounded" alt="Toronto Office">
+                <div class="col-lg-6" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800" class="img-fluid shadow-lg rounded-4" alt="Toronto Office">
                 </div>
             </div>
 
             <!-- Mission & Vision Cards -->
             <div class="row g-4 mb-5">
-                <div class="col-md-6">
-                    <div class="p-5 bg-light h-100 border-start border-turquoise border-5">
+                <div class="col-md-6" data-aos="zoom-in-right">
+                    <div class="p-5 bg-light h-100 border-start border-turquoise border-5 rounded-4 shadow-sm">
                         <h3 class="fw-bold mb-3">Nuestra Misión</h3>
                         <p class="text-muted">Facilitar la movilidad laboral y migratoria de talento global hacia Canadá, garantizando procesos éticos, legales y exitosos que beneficien tanto a las personas como a la economía canadiense.</p>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="p-5 bg-dark text-white h-100 border-start border-turquoise border-5">
+                <div class="col-md-6" data-aos="zoom-in-left">
+                    <div class="p-5 bg-dark text-white h-100 border-start border-turquoise border-5 rounded-4 shadow-sm">
                         <h3 class="fw-bold mb-3">Nuestra Visión</h3>
                         <p class="opacity-75">Ser la consultora líder y más confiable para profesionales de habla hispana que buscan transformar su futuro en Canadá, reconocida por nuestra tasa de éxito y soporte integral.</p>
                     </div>
@@ -88,67 +98,34 @@
 
             <!-- Values -->
             <div class="py-5 text-center">
-                <h2 class="display-5 fw-bold mb-5">Valores que Nos Definen</h2>
+                <h2 class="display-5 fw-bold mb-5" data-aos="fade-up">Valores que Nos Definen</h2>
                 <div class="row g-4">
-                    <div class="col-md-3">
-                        <i class="fa-solid fa-scale-balanced text-turquoise fs-1 mb-3"></i>
-                        <h5 class="fw-bold">Ética Legal</h5>
-                        <p class="small text-muted">Operamos estrictamente bajo la ley migratoria canadiense y estándares del CICC.</p>
-                    </div>
-                    <div class="col-md-3">
-                        <i class="fa-solid fa-handshake-angle text-turquoise fs-1 mb-3"></i>
-                        <h5 class="fw-bold">Empatía</h5>
-                        <p class="small text-muted">Tratamos cada caso como si fuera propio, entendiendo el valor de tu proyecto.</p>
-                    </div>
-                    <div class="col-md-3">
-                        <i class="fa-solid fa-bullseye text-turquoise fs-1 mb-3"></i>
-                        <h5 class="fw-bold">Resultados</h5>
-                        <p class="small text-muted">Nos enfocamos en soluciones reales que terminen en una vida exitosa en Canadá.</p>
-                    </div>
-                    <div class="col-md-3">
-                        <i class="fa-solid fa-users-gear text-turquoise fs-1 mb-3"></i>
-                        <h5 class="fw-bold">Integralidad</h5>
-                        <p class="small text-muted">Desde el primer examen de idiomas hasta tu integración en el nuevo empleo.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team / Accreditations -->
-    <section class="py-5 bg-light">
-        <div class="container py-5">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-5">
-                    <h2 class="display-5 fw-bold mb-4">Consultores Certificados</h2>
-                    <p class="text-muted mb-4">No arriesgues tu futuro. Solo los consultores autorizados por el College of Immigration and Citizenship Consultants (CICC) pueden cobrar por asesoría migratoria.</p>
-                    <div class="d-flex align-items-center gap-3 p-3 bg-white rounded shadow-sm">
-                        <i class="fa-solid fa-id-card text-turquoise fs-2"></i>
-                        <div>
-                            <h6 class="fw-bold mb-0">Miembro Activo CICC</h6>
-                            <small class="text-muted">Verifica nuestro estatus oficial</small>
+                    <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+                        <div class="step-card p-4 rounded-4 shadow-sm h-100 border">
+                            <i class="fa-solid fa-scale-balanced text-turquoise fs-1 mb-3"></i>
+                            <h5 class="fw-bold">Ética Legal</h5>
+                            <p class="small text-muted">Operamos estrictamente bajo la ley migratoria canadiense.</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-7">
-                    <div class="row g-4">
-                        <div class="col-md-6">
-                            <div class="card border-0 shadow-sm">
-                                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400" class="card-img-top" alt="Founder">
-                                <div class="card-body">
-                                    <h5 class="fw-bold mb-0">John Doe</h5>
-                                    <small class="text-turquoise">Socio Fundador & Consultor CICC</small>
-                                </div>
-                            </div>
+                    <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+                        <div class="step-card p-4 rounded-4 shadow-sm h-100 border">
+                            <i class="fa-solid fa-handshake-angle text-turquoise fs-1 mb-3"></i>
+                            <h5 class="fw-bold">Empatía</h5>
+                            <p class="small text-muted">Tratamos cada caso como si fuera propio, entendiendo el valor de tu proyecto.</p>
                         </div>
-                        <div class="col-md-6">
-                            <div class="card border-0 shadow-sm">
-                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400" class="card-img-top" alt="HR Lead">
-                                <div class="card-body">
-                                    <h5 class="fw-bold mb-0">Jane Smith</h5>
-                                    <small class="text-turquoise">Directora de Reclutamiento Internacional</small>
-                                </div>
-                            </div>
+                    </div>
+                    <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+                        <div class="step-card p-4 rounded-4 shadow-sm h-100 border">
+                            <i class="fa-solid fa-bullseye text-turquoise fs-1 mb-3"></i>
+                            <h5 class="fw-bold">Resultados</h5>
+                            <p class="small text-muted">Nos enfocamos en soluciones reales que terminen en una vida exitosa en Canadá.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+                        <div class="step-card p-4 rounded-4 shadow-sm h-100 border">
+                            <i class="fa-solid fa-users-line text-turquoise fs-1 mb-3"></i>
+                            <h5 class="fw-bold">Colaboración</h5>
+                            <p class="small text-muted">Trabajamos en equipo con usted para lograr sus objetivos migratorios.</p>
                         </div>
                     </div>
                 </div>
@@ -157,48 +134,49 @@
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="bg-dark text-white pt-5">
         <div class="container">
             <div class="row g-5">
-                <div class="col-lg-4">
-                    <div class="footer-logo">
-                        <img src="assets/img/logo1.jpeg" alt="Integral Consulting">
+                <div class="col-lg-4" data-aos="fade-up">
+                    <img src="assets/img/logo1.jpeg" alt="Integral Consulting" class="mb-4" style="height: 60px;">
+                    <p class="opacity-75">Consultoría líder en servicios migratorios y recursos humanos, conectando talento global con ética y profesionalismo.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="text-white fs-4 hover-turquoise"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="text-white fs-4 hover-turquoise"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" class="text-white fs-4 hover-turquoise"><i class="fa-brands fa-instagram"></i></a>
                     </div>
-                    <p>Consultoría líder en servicios migratorios y recursos humanos, conectando talento global con el mercado canadiense.</p>
                 </div>
-                <div class="col-md-4 col-lg-2">
-                    <h5>Enlaces</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="nosotros.html">Nosotros</a></li>
-                        <li><a href="provincias.html">Provincias</a></li>
-                        <li><a href="vacantes.html">Vacantes</a></li>
-                        <li><a href="blog.html">Blog</a></li>
+                <div class="col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="100">
+                    <h5 class="fw-bold mb-4">Enlaces</h5>
+                    <ul class="list-unstyled opacity-75">
+                        <li class="mb-2"><a href="index.html" class="text-white text-decoration-none">Inicio</a></li>
+                        <li class="mb-2"><a href="nosotros.html" class="text-white text-decoration-none">Nosotros</a></li>
+                        <li class="mb-2"><a href="servicios.html" class="text-white text-decoration-none">Servicios</a></li>
+                        <li class="mb-2"><a href="vacantes.html" class="text-white text-decoration-none">Vacantes</a></li>
+                        <li class="mb-2"><a href="casos-exito.html" class="text-white text-decoration-none">Casos de Éxito</a></li>
+                        <li class="mb-2"><a href="privacidad.html" class="text-white text-decoration-none">Aviso de Privacidad</a></li>
                     </ul>
                 </div>
-                <div class="col-md-4 col-lg-3">
-                    <h5>Sedes</h5>
-                    <ul class="list-unstyled">
-                        <li>Toronto, Canada</li>
-                        <li>Ciudad de México, MX</li>
+                <div class="col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <h5 class="fw-bold mb-4">Sedes</h5>
+                    <ul class="list-unstyled opacity-75">
+                        <li class="mb-3"><i class="fa-solid fa-location-dot text-turquoise me-2"></i> Toronto, Canada</li>
+                        <li class="mb-3"><i class="fa-solid fa-location-dot text-turquoise me-2"></i> Lago Alberto 319, Col. Granada, Alc. Miguel Hidalgo, 11520, CDMX</li>
                     </ul>
                 </div>
-                <div class="col-md-4 col-lg-3">
-                    <h5>Contacto</h5>
-                    <ul class="list-unstyled">
-                        <li>+52 (55) 1234 5678</li>
-                        <li>info@integralconsulting.ca</li>
+                <div class="col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <h5 class="fw-bold mb-4">Contacto</h5>
+                    <ul class="list-unstyled opacity-75">
+                        <li class="mb-3"><i class="fa-solid fa-phone text-turquoise me-2"></i> 55 4905 0421</li>
+                        <li class="mb-3"><i class="fa-solid fa-phone text-turquoise me-2"></i> 56 3214 9233</li>
+                        <li class="mb-3"><i class="fa-solid fa-envelope text-turquoise me-2"></i> contact@integralconsulting.site</li>
                     </ul>
                 </div>
             </div>
-            <div class="text-center pt-5 pb-3">
-                <p class="small">&copy; 2026 Integral Consulting. Todos los derechos reservados.</p>
+            <div class="text-center pt-5 pb-3 border-top border-secondary mt-5">
+                <p class="small opacity-50">&copy; 2026 Integral Consulting. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
-
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/main.js"></script>
 </body>
 </html>

@@ -1,164 +1,233 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guía Migratoria | Integral Consulting</title>
-    <!-- Bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Canada Style -->
-    <link rel="stylesheet" href="assets/css/canada-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="/index.js"></script>
 </head>
-<body>
+<body class="guia-page">
+    <div id="preloader"><div class="loader-content"><img src="assets/img/logo3.jpeg" alt="Integral Consulting" class="loader-logo-small"></div></div>
 
     <!-- News Alert Bar -->
     <div class="alert alert-dismissible fade show news-alert-bar text-center mb-0" role="alert">
         <div class="container">
             <i class="fa-solid fa-bullhorn text-turquoise me-2"></i>
             Última hora: <strong>Cambios en las cuotas de Express Entry para 2026.</strong> 
-            <a href="blog.html" class="ms-2">Leer más <i class="fa-solid fa-arrow-right small"></i></a>
+            <a href="noticias.html" class="ms-2">Leer más <i class="fa-solid fa-arrow-right small"></i></a>
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
     </div>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light" id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="assets/img/logo3.jpeg" alt="Integral Consulting Logo">
+                <img src="assets/img/logo3.jpeg" alt="Integral Consulting" id="navLogo">
             </a>
+            <div class="d-flex align-items-center order-lg-last ms-lg-3">
+                <!-- Language Switcher -->
+                <div class="dropdown me-2">
+                    <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-globe me-1"></i> ES
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item active" href="#">Español</a></li>
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                        <li><a class="dropdown-item" href="#">Français</a></li>
+                    </ul>
+                </div>
+                <!-- Notifications Bell -->
+                <button class="btn btn-sm btn-link text-dark me-2 position-relative" title="Notificaciones">
+                    <i class="fa-solid fa-bell fs-5"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger border border-light" style="font-size: 0.5rem; padding: 0.35em 0.5em;">
+                        1
+                    </span>
+                </button>
+                <a href="contacto.html" class="btn btn-turquoise shadow-sm d-none d-sm-inline-block">Asesoría Gratuita</a>
+            </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-center">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
                     <li class="nav-item"><a class="nav-link" href="vacantes.html">Vacantes</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="guia.html">Guía Migratoria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="casos-exito.html">Casos de Éxito</a></li>
+                    <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="preguntas.html">Preguntas Frecuentes</a></li>
                     <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-                    <li class="nav-item ms-lg-3">
-                        <a href="contacto.html" class="btn btn-turquoise shadow-sm">Evaluar mi Perfil</a>
-                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Header -->
-    <section class="py-5 bg-navy text-white mt-4" style="background-color: var(--oxford-grey);">
-        <div class="container py-5 text-center">
-            <h1 class="display-4 fw-bold">Centro de Recursos</h1>
+    <header class="py-5 mt-5 bg-dark text-white text-center" data-aos="fade-down">
+        <div class="container py-5">
+            <h1 class="display-4 fw-bold">Centro de <span class="text-turquoise">Recursos</span></h1>
             <p class="lead opacity-75">Descarga nuestras guías gratuitas y prepárate para tu proceso migratorio con información oficial.</p>
+        </div>
+    </header>
+
+    <!-- Timeline Section -->
+    <section class="py-5 bg-white">
+        <div class="container py-5">
+            <h2 class="display-5 fw-bold text-center mb-5" data-aos="fade-down">Tu Camino a <span class="text-turquoise">Canadá</span></h2>
+            
+            <div class="timeline-vertical mx-auto" style="max-width: 900px;">
+                <!-- Step 1 -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot shadow-sm">1</div>
+                    <div class="timeline-content">
+                        <h4 class="fw-bold text-turquoise">Evaluación</h4>
+                        <p class="text-muted mb-0">Análisis exhaustivo de tu perfil, educación y experiencia para determinar la mejor estrategia migratoria.</p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-dot shadow-sm">2</div>
+                    <div class="timeline-content">
+                        <h4 class="fw-bold text-turquoise">Preparación de Idiomas</h4>
+                        <p class="text-muted mb-0">Obtención de los resultados necesarios en IELTS, CELPIP o TEF para maximizar tu puntaje.</p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-dot shadow-sm">3</div>
+                    <div class="timeline-content">
+                        <h4 class="fw-bold text-turquoise">Aplicación</h4>
+                        <p class="text-muted mb-0">Presentación formal de tu solicitud ante el IRCC o las provincias correspondientes con soporte experto.</p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-dot shadow-sm">4</div>
+                    <div class="timeline-content">
+                        <h4 class="fw-bold text-turquoise">Obtención de Visa</h4>
+                        <p class="text-muted mb-0">Recepción de tu Confirmación de Residencia Permanente (COPR) o Permiso de Trabajo aprobado.</p>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="timeline-dot shadow-sm bg-dark">5</div>
+                    <div class="timeline-content">
+                        <h4 class="fw-bold text-turquoise">Landing en Canadá</h4>
+                        <p class="text-muted mb-0">¡Bienvenido! Te apoyamos en tus primeros pasos de integración y búsqueda de vivienda.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Resources Grid -->
-    <section class="section-padding">
-        <div class="container">
+    <section class="py-5 overflow-hidden">
+        <div class="container py-5">
             <div class="row g-4">
                 <!-- Guide 1 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card resource-card h-100">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card product-card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
                         <img src="assets/img/Fondo.jpeg" class="card-img-top" alt="Guía de Trabajo" style="height: 200px; object-fit: cover;">
-                        <span class="resource-badge">PDF Gratis</span>
+                        <span class="product-badge">PDF Gratis</span>
                         <div class="card-body p-4">
-                            <h4 class="card-title">Guía de Trabajo 2026</h4>
-                            <p class="card-text text-muted small">Todo lo que necesitas saber sobre los tipos de LMIA, permisos cerrados y cómo conseguir una oferta laboral válida.</p>
-                            <hr>
-                            <a href="#" class="btn btn-turquoise w-100"><i class="fa-solid fa-download me-2"></i> Descargar Guía</a>
+                            <h4 class="fw-bold mb-3">Guía de Trabajo 2026</h4>
+                            <p class="text-muted small mb-4">Todo lo que necesitas saber sobre los tipos de LMIA, permisos cerrados y cómo conseguir una oferta laboral válida.</p>
+                            <hr class="opacity-25">
+                            <a href="#" class="btn btn-turquoise w-100 rounded-pill fw-bold"><i class="fa-solid fa-download me-2"></i> Descargar Guía</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Guide 2 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card resource-card h-100">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card product-card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
                         <img src="assets/img/Fondo2.jpeg" class="card-img-top" alt="Guía de Estudio" style="height: 200px; object-fit: cover;">
-                        <span class="resource-badge">PDF Gratis</span>
+                        <span class="product-badge">PDF Gratis</span>
                         <div class="card-body p-4">
-                            <h4 class="card-title">Estudiar en Canadá</h4>
-                            <p class="card-text text-muted small">Descubre cómo elegir el college adecuado, los requisitos financieros y el camino hacia la residencia permanente post-graduación.</p>
-                            <hr>
-                            <a href="#" class="btn btn-turquoise w-100"><i class="fa-solid fa-download me-2"></i> Descargar Guía</a>
+                            <h4 class="fw-bold mb-3">Estudiar en Canadá</h4>
+                            <p class="text-muted small mb-4">Descubre cómo elegir el college adecuado, los requisitos financieros y el camino hacia la residencia permanente post-graduación.</p>
+                            <hr class="opacity-25">
+                            <a href="#" class="btn btn-turquoise w-100 rounded-pill fw-bold"><i class="fa-solid fa-download me-2"></i> Descargar Guía</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Guide 3 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card resource-card h-100">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card product-card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
                         <img src="assets/img/Fondo canada.jpg" class="card-img-top" alt="Guía Express Entry" style="height: 200px; object-fit: cover;">
-                        <span class="resource-badge">PDF Gratis</span>
+                        <span class="product-badge">PDF Gratis</span>
                         <div class="card-body p-4">
-                            <h4 class="card-title">Checklist Express Entry</h4>
-                            <p class="card-text text-muted small">Una lista detallada de documentos para que no te falte nada al momento de recibir tu Invitación a Aplicar (ITA).</p>
-                            <hr>
-                            <a href="#" class="btn btn-turquoise w-100"><i class="fa-solid fa-download me-2"></i> Descargar Guía</a>
+                            <h4 class="fw-bold mb-3">Checklist Express Entry</h4>
+                            <p class="text-muted small mb-4">Una lista detallada de documentos para que no te falte nada al momento de recibir tu Invitación a Aplicar (ITA).</p>
+                            <hr class="opacity-25">
+                            <a href="#" class="btn btn-turquoise w-100 rounded-pill fw-bold"><i class="fa-solid fa-download me-2"></i> Descargar Guía</a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Extra Support -->
-            <div class="mt-5 p-5 bg-light rounded-4 text-center">
+            <div class="mt-5 p-5 bg-light rounded-5 text-center shadow-sm border" data-aos="zoom-in">
                 <h3 class="fw-bold mb-3">¿Necesitas una asesoría personalizada?</h3>
-                <p class="text-muted mb-4">Nuestras guías son un gran comienzo, pero cada caso es único. Habla con un consultor certificado.</p>
-                <a href="contacto.html" class="btn btn-outline-turquoise btn-lg px-5">Agendar Consulta Profesional</a>
+                <p class="text-muted mb-4 lead">Nuestras guías son un gran comienzo, pero cada caso es único. Habla con un consultor certificado.</p>
+                <a href="contacto.html" class="btn btn-outline-dark btn-lg px-5 rounded-pill fw-bold">Agendar Consulta Profesional</a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="bg-dark text-white pt-5">
         <div class="container">
             <div class="row g-5">
-                <div class="col-lg-4">
-                    <div class="footer-logo">
-                        <img src="assets/img/logo1.jpeg" alt="Integral Consulting Footer Logo">
-                    </div>
-                    <p class="mb-4">Consultoría integral especializada en el mercado canadiense. Tu éxito es nuestra misión.</p>
-                    <div class="d-flex gap-3">
-                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="fa-brands fa-instagram"></i></a>
+                <div class="col-lg-4" data-aos="fade-up">
+                    <img src="assets/img/logo1.jpeg" alt="Integral Consulting" class="mb-4" style="height: 60px;">
+                    <p class="opacity-75">Consultoría líder en servicios migratorios y recursos humanos, conectando talento global con ética y profesionalismo.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="text-white fs-4 hover-turquoise"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="text-white fs-4 hover-turquoise"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" class="text-white fs-4 hover-turquoise"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
-                <div class="col-md-4 col-lg-2">
-                    <h5>Navegación</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="index.html">Inicio</a></li>
-                        <li class="mb-2"><a href="vacantes.html">Vacantes</a></li>
-                        <li class="mb-2"><a href="guia.html">Guía Migratoria</a></li>
-                        <li class="mb-2"><a href="contacto.html">Contacto</a></li>
+                <div class="col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="100">
+                    <h5 class="fw-bold mb-4">Enlaces</h5>
+                    <ul class="list-unstyled opacity-75">
+                        <li class="mb-2"><a href="index.html" class="text-white text-decoration-none">Inicio</a></li>
+                        <li class="mb-2"><a href="nosotros.html" class="text-white text-decoration-none">Nosotros</a></li>
+                        <li class="nav-item"><a href="servicios.html" class="text-white text-decoration-none">Servicios</a></li>
+                        <li class="mb-2"><a href="vacantes.html" class="text-white text-decoration-none">Vacantes</a></li>
+                        <li class="mb-2"><a href="casos-exito.html" class="text-white text-decoration-none">Casos de Éxito</a></li>
+                        <li class="mb-2"><a href="privacidad.html" class="text-white text-decoration-none">Aviso de Privacidad</a></li>
                     </ul>
                 </div>
-                <div class="col-md-4 col-lg-3">
-                    <h5>Sedes</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><i class="fa-solid fa-location-dot text-turquoise me-2"></i> Toronto, Canada</li>
-                        <li class="mb-2"><i class="fa-solid fa-location-dot text-turquoise me-2"></i> Ciudad de México, MX</li>
+                <div class="col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <h5 class="fw-bold mb-4">Sedes</h5>
+                    <ul class="list-unstyled opacity-75">
+                        <li class="mb-3"><i class="fa-solid fa-location-dot text-turquoise me-2"></i> Toronto, Canada</li>
+                        <li class="mb-3"><i class="fa-solid fa-location-dot text-turquoise me-2"></i> Lago Alberto 319, Col. Granada, Alc. Miguel Hidalgo, 11520, CDMX</li>
                     </ul>
                 </div>
-                <div class="col-md-4 col-lg-3">
-                    <div class="legal-seal">
-                        <i class="fa-solid fa-check-double text-turquoise mb-2 fs-2"></i>
-                        <h6 class="text-white">Agencia Autorizada</h6>
-                        <p class="small mb-0">Cumplimos con la normativa IRCC para trámites migratorios.</p>
-                    </div>
+                <div class="col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <h5 class="fw-bold mb-4">Contacto</h5>
+                    <ul class="list-unstyled opacity-75">
+                        <li class="mb-3"><i class="fa-solid fa-phone text-turquoise me-2"></i> 55 4905 0421</li>
+                        <li class="mb-3"><i class="fa-solid fa-phone text-turquoise me-2"></i> 56 3214 9233</li>
+                        <li class="mb-3"><i class="fa-solid fa-envelope text-turquoise me-2"></i> contact@integralconsulting.site</li>
+                    </ul>
                 </div>
             </div>
-            <hr class="mt-5 border-secondary">
-            <div class="text-center mt-4">
-                <p class="small mb-0">&copy; 2026 Integral Consulting. Todos los derechos reservados.</p>
+            <div class="text-center pt-5 pb-3 border-top border-secondary mt-5">
+                <p class="small opacity-50">&copy; 2026 Integral Consulting. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
-
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/main.js"></script>
 </body>
 </html>

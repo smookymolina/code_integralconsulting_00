@@ -1,0 +1,24 @@
+{
+  "name": "code_integralconsulting_00",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "bugs": {
+    "url": "https://github.com/smookymolina/code_integralconsulting_00/issues"
+  },
+  "homepage": "https://github.com/smookymolina/code_integralconsulting_00#readme",
+  "devDependencies": {
+    "vite": "^7.3.1"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "aos": "^2.3.4",
+    "bootstrap": "^5.3.8"
+  }
+}

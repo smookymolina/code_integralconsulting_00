@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios | Integral Consulting</title>
+    <title>Preguntas Frecuentes | Integral Consulting</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script type="module" src="/index.js"></script>
 </head>
-<body class="servicios-page">
+<body class="faq-page">
     <div id="preloader"><div class="loader-content"><img src="assets/img/logo3.jpeg" alt="Integral Consulting" class="loader-logo-small"></div></div>
 
     <!-- News Alert Bar -->
@@ -48,11 +48,11 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
                     <li class="nav-item"><a class="nav-link" href="vacantes.html">Vacantes</a></li>
                     <li class="nav-item"><a class="nav-link" href="casos-exito.html">Casos de Éxito</a></li>
                     <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
-                    <li class="nav-item"><a class="nav-link" href="preguntas.html">Preguntas Frecuentes</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="preguntas.html">Preguntas Frecuentes</a></li>
                     <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
@@ -62,86 +62,65 @@
     <!-- Page Header -->
     <header class="py-5 mt-5 bg-light" data-aos="fade-down">
         <div class="container py-5 text-center">
-            <h1 class="display-4 fw-bold">Nuestros <span class="text-turquoise">Servicios</span></h1>
-            <p class="lead text-muted">Soluciones migratorias integrales diseñadas por consultores certificados.</p>
+            <h1 class="display-4 fw-bold">Preguntas <span class="text-turquoise">Frecuentes</span></h1>
+            <p class="lead text-muted">Resolvemos tus dudas sobre el proceso migratorio a Canadá.</p>
         </div>
     </header>
 
-    <section class="py-5 overflow-hidden">
-        <div class="container py-4">
-            <div class="row g-4">
-                <!-- Bloque 1: Express Entry & PNP -->
-                <div class="col-lg-6" data-aos="fade-up">
-                    <div class="card product-card h-100 border-0 shadow-lg rounded-5 overflow-hidden">
-                        <div class="card-body p-4 p-md-5">
-                            <div class="service-icon-box">
-                                <i class="fa-solid fa-passport"></i>
+    <!-- FAQ Section -->
+    <section class="py-5 bg-white overflow-hidden">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="accordion accordion-flush shadow-lg rounded-5 overflow-hidden border" id="faqAccordionPage">
+                        <!-- Q4 -->
+                        <div class="accordion-item border-bottom">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-bold py-4" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    ¿Cuáles son las tarifas de solicitud de VISA para Canadá?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse show" data-bs-parent="#faqAccordionPage">
+                                <div class="accordion-body text-muted py-4">
+                                    <p>El gobierno canadiense cobra tarifas variables por la presentación de diferentes formularios de inmigración. Esto no es exclusivo del gobierno canadiense, ya que la mayoría, si no todos, los países requieren que se paguen tarifas de procesamiento a la autoridad de inmigración.</p>
+                                    <p>Las tarifas pueden oscilar entre: <strong>VISA 100 CAD, Toma de Biométricos 85 CAD y eTA 7 CAD</strong>.</p>
+                                    <p class="mb-0">Un punto importante a tener en cuenta es que las tarifas gubernamentales no son reembolsables. Por esta razón, es de vital importancia asegurarse de que sus documentos se presenten a tiempo, sean correctos y completos.</p>
+                                </div>
                             </div>
-                            <h3 class="fw-bold h4 mb-3">Express Entry & PNP</h3>
-                            <p class="text-muted small mb-4">Gestionamos tu perfil en el sistema federal y buscamos nominaciones provinciales estratégicas para asegurar tu residencia permanente.</p>
-                            <ul class="list-unstyled small text-muted mb-4">
-                                <li class="mb-2"><i class="fa-solid fa-check text-turquoise me-2"></i>Cálculo de puntaje CRS</li>
-                                <li class="mb-2"><i class="fa-solid fa-check text-turquoise me-2"></i>Estrategia de Nominación Provincial</li>
-                                <li class="mb-2"><i class="fa-solid fa-check text-turquoise me-2"></i>Gestión de ITA y documentos</li>
-                            </ul>
-                            <a href="contacto.html" class="btn btn-turquoise w-100 rounded-pill fw-bold">Saber más</a>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Bloque 2: Permisos de Estudio y Trabajo -->
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card product-card h-100 border-0 shadow-lg rounded-5 overflow-hidden">
-                        <div class="card-body p-4 p-md-5">
-                            <div class="service-icon-box">
-                                <i class="fa-solid fa-graduation-cap"></i>
+                        <!-- Q5 -->
+                        <div class="accordion-item border-bottom">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold py-4" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    ¿Cuáles son los requisitos de las pruebas de inglés o francés?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordionPage">
+                                <div class="accordion-body text-muted py-4">
+                                    Tanto el francés como el inglés son idiomas oficiales en Canadá. Los recién llegados deben, por lo tanto, demostrar su habilidad básica en uno de estos idiomas para demostrar que pueden establecerse en el país. Como parte del proceso de inmigración, se le exige que se someta a una prueba de idioma estandarizada.
+                                </div>
                             </div>
-                            <h3 class="fw-bold h4 mb-3">Permisos de Estudio y Trabajo</h3>
-                            <p class="text-muted small mb-4">Te asesoramos en la elección de programas educativos elegibles para PGWP y gestionamos tus permisos de trabajo abiertos o cerrados.</p>
-                            <ul class="list-unstyled small text-muted mb-4">
-                                <li class="mb-2"><i class="fa-solid fa-check text-turquoise me-2"></i>Inscripción en DLI (Instituciones Designadas)</li>
-                                <li class="mb-2"><i class="fa-solid fa-check text-turquoise me-2"></i>Visas de Residente Temporal</li>
-                                <li class="mb-2"><i class="fa-solid fa-check text-turquoise me-2"></i>Permisos Post-Graduación</li>
-                            </ul>
-                            <a href="contacto.html" class="btn btn-turquoise w-100 rounded-pill fw-bold">Saber más</a>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Bloque 3: Patrocinio Familiar -->
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card product-card h-100 border-0 shadow-lg rounded-5 overflow-hidden">
-                        <div class="card-body p-4 p-md-5">
-                            <div class="service-icon-box">
-                                <i class="fa-solid fa-people-roof"></i>
+                        <!-- Q6 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold py-4" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                                    ¿Cuáles son los factores en el sistema de puntos para la aprobación de la VISA canadiense?
+                                </button>
+                            </h2>
+                            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordionPage">
+                                <div class="accordion-body text-muted py-4">
+                                    <p>Se tienen en cuenta seis factores para determinar su elegibilidad para los Programas para Trabajadores Calificados:</p>
+                                    <ul class="mb-0">
+                                        <li>Habilidades básicas de inglés o francés</li>
+                                        <li>Educación</li>
+                                        <li>Experiencia laboral</li>
+                                        <li>Edad</li>
+                                        <li>Empleo organizado en Canadá</li>
+                                        <li>Adaptabilidad</li>
+                                    </ul>
+                                </div>
                             </div>
-                            <h3 class="fw-bold h4 mb-3">Patrocinio Familiar</h3>
-                            <p class="text-muted small mb-4">Ayudamos a ciudadanos y residentes permanentes a traer a sus seres queridos a través de programas de patrocinio de parejas, hijos y padres.</p>
-                            <ul class="list-unstyled small text-muted mb-4">
-                                <li class="mb-2"><i class="fa-solid fa-check text-turquoise me-2"></i>Patrocinio de Cónyuge/Pareja</li>
-                                <li class="mb-2"><i class="fa-solid fa-check text-turquoise me-2"></i>Dependientes económicos</li>
-                                <li class="mb-2"><i class="fa-solid fa-check text-turquoise me-2"></i>Super Visa para Padres/Abuelos</li>
-                            </ul>
-                            <a href="contacto.html" class="btn btn-turquoise w-100 rounded-pill fw-bold">Saber más</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Bloque 4: LMIA para Empresas -->
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card product-card h-100 border-0 shadow-lg rounded-5 overflow-hidden">
-                        <div class="card-body p-4 p-md-5">
-                            <div class="service-icon-box">
-                                <i class="fa-solid fa-building-circle-check"></i>
-                            </div>
-                            <h3 class="fw-bold h4 mb-3">LMIA para Empresas</h3>
-                            <p class="text-muted small mb-4">Brindamos soporte a empleadores canadienses para la obtención de la Evaluación de Impacto en el Mercado Laboral y contratación de extranjeros.</p>
-                            <ul class="list-unstyled small text-muted mb-4">
-                                <li class="mb-2"><i class="fa-solid fa-check text-turquoise me-2"></i>Gestión ante Service Canada</li>
-                                <li class="mb-2"><i class="fa-solid fa-check text-turquoise me-2"></i>Cumplimiento de normativas laborales</li>
-                                <li class="mb-2"><i class="fa-solid fa-check text-turquoise me-2"></i>Reclutamiento Internacional</li>
-                            </ul>
-                            <a href="contacto.html" class="btn btn-turquoise w-100 rounded-pill fw-bold">Saber más</a>
                         </div>
                     </div>
                 </div>
